@@ -1,0 +1,29 @@
+{
+  "locations": [
+    {
+      "city": "Paris",
+      "postal_code": "75001-75020",
+      "region": "Île-de-France"
+    }
+  ],
+  "property_type": ["apartment", "house"],
+  "price_range": {
+    "min": 150000,
+    "max": 600000
+  },
+  "rooms": {
+    "min": 2,
+    "max": 5
+  },
+  "area_sqm": {
+    "min": 50,
+    "max": 200
+  },
+  "outdoor_space": ["balcony", "terrace", "garden"],
+  "keywords_include": ["bright", "modern", "renovated"],
+  "keywords_exclude": ["studio", "shared"],
+  "sources": ["seloger", "leboncoin", "pap"],
+  "max_days_old": 7,
+  "notification_channel": "discord",
+  "alert_threshold_new_listings": 1
+}
