@@ -1,11 +1,106 @@
 #!/usr/bin/env node
 /**
- * Real Estate Scraper - Multi-Source Aggregator
- * Scans multiple real estate portals and aggregates listings
+ * Real Estate Scanner v2.0 - Enhanced Multi-Source Aggregator
+ * Scans multiple real estate portals for BEST opportunities
+ * Focus: Lower price + Better location + Spacious + Move-in ready
  */
 
 const fs = require('fs');
 const path = require('path');
+
+// ============================================================================
+// OPPORTUNITY SCORER - Rate listings by value
+// ============================================================================
+
+class OpportunityScorer {
+  constructor(config) {
+    this.config = config;
+    this.weights = config.opportunity_scoring?.weights || {};
+    this.target_price_per_sqm = config.opportunity_scoring?.target_price_per_sqm || 5000;
+  }
+
+  score(listing) {
+    if (!listing.property.sqm || !listing.price) return 0;
+
+    const scores = {
+      price_ratio: this.scorePriceRatio(listing),
+      location_score: this.scoreLocation(listing),
+      space_per_euro: this.scoreSpacePerEuro(listing),
+      condition: this.scoreCondition(listing),
+      isolation_factor: this.scoreIsolation(listing),
+    };
+
+    // Weighted average
+    let total = 0;
+    let weight_sum = 0;
+    for (const [key, weight] of Object.entries(this.weights)) {
+      if (scores[key] !== undefined) {
+        total += scores[key] * weight;
+        weight_sum += weight;
+      }
+    }
+
+    const final_score = weight_sum > 0 ? (total / weight_sum) * 10 : 0;
+    return {
+      overall: Math.min(10, Math.max(0, final_score)),
+      components: scores,
+    };
+  }
+
+  scorePriceRatio(listing) {
+    // Lower price relative to target = better score
+    const actual_price_per_sqm = listing.price / listing.property.sqm;
+    const ratio = 1 - Math.min(1, actual_price_per_sqm / this.target_price_per_sqm);
+    return ratio;
+  }
+
+  scoreLocation(listing) {
+    // Check for preferred neighborhoods
+    const desc = (listing.description + ' ' + listing.title).toLowerCase();
+    const preferred = this.config.opportunity_scoring?.preferred_neighborhoods || [];
+    let matches = 0;
+    for (const pref of preferred) {
+      if (desc.includes(pref.toLowerCase())) matches++;
+    }
+    return Math.min(1, matches / Math.max(1, preferred.length));
+  }
+
+  scoreSpacePerEuro(listing) {
+    // More space for the money = better
+    const sqm_per_1000_euros = (listing.property.sqm / listing.price) * 1000;
+    return Math.min(1, sqm_per_1000_euros / 0.3); // 0.3 sqm per 1000 euros is excellent
+  }
+
+  scoreCondition(listing) {
+    const condition = (listing.property.condition || '').toLowerCase();
+    const scores = {
+      'excellent': 1.0,
+      'good': 0.85,
+      'renovated': 0.9,
+      'needing-cosmetics': 0.7,
+      'fair': 0.5,
+    };
+    return scores[condition] || 0.5;
+  }
+
+  scoreIsolation(listing) {
+    // Avoid listings that need major work
+    const desc = (listing.description + ' ' + listing.title).toLowerCase();
+    const red_flags = [
+      'needs-major-work',
+      'renovation-needed',
+      'structural',
+      'foundation',
+      'roof',
+      'asbestos',
+      'mold',
+    ];
+    for (const flag of red_flags) {
+      if (desc.includes(flag)) return 0;
+    }
+    return 1.0;
+  }
+}
 
 // ============================================================================
 // CONFIGURATION LOADER
@@ -17,20 +112,8 @@ function loadConfig() {
     return JSON.parse(fs.readFileSync(configPath, 'utf-8'));
   } catch (err) {
     console.error('Error loading config:', err);
-    return getDefaultConfig();
+    return {};
   }
-}
-
-function getDefaultConfig() {
-  return {
-    locations: [{ city: 'Paris', postal_code: '75001-75020' }],
-    property_type: ['apartment', 'house'],
-    price_range: { min: 150000, max: 600000 },
-    rooms: { min: 2, max: 5 },
-    area_sqm: { min: 50 },
-    sources: ['seloger', 'leboncoin', 'pap'],
-    max_days_old: 7,
-  };
 }
 
 // ============================================================================
@@ -86,6 +169,12 @@ class StorageManager {
     const file = path.join(this.dataDir, 'alerted_listings.json');
     fs.writeFileSync(file, JSON.stringify(Array.from(ids), null, 2));
   }
+
+  saveReport(report) {
+    const file = path.join(this.dataDir, `report-${Date.now()}.json`);
+    fs.writeFileSync(file, JSON.stringify(report, null, 2));
+    return file;
+  }
 }
 
 // ============================================================================
@@ -117,6 +206,7 @@ class ListingParser {
         floor: data.floor,
         parking: data.parking,
         outdoor_space: data.outdoor_space,
+        condition: data.condition || 'unknown',
       },
       description: data.description || '',
       images: data.images || [],
@@ -127,79 +217,8 @@ class ListingParser {
       first_seen: data.first_seen || new Date().toISOString(),
       last_updated: new Date().toISOString(),
       status: 'active',
+      score: data.score || 0,
     };
-  }
-
-  static normalizePrice(priceStr) {
-    if (!priceStr) return 0;
-    return parseInt(String(priceStr).replace(/[^0-9]/g, ''), 10) || 0;
-  }
-}
-
-// ============================================================================
-// SCRAPER: SELOGER
-// ============================================================================
-
-class SelogerScraper {
-  static buildSearchUrl(config) {
-    const location = config.locations[0];
-    const params = new URLSearchParams({
-      location: location.city || location.postal_code,
-      resultsByPage: '120',
-      bedroomMin: config.rooms?.min || 2,
-      priceMin: config.price_range?.min || 0,
-      priceMax: config.price_range?.max || 1000000,
-    });
-    return `https://www.seloger.com/list.htm?${params.toString()}`;
-  }
-
-  static parseListings(html) {
-    // Mock parser - returns empty in headless
-    // In real impl, use cheerio or playwright
-    console.log('[SeLoger] Would parse HTML for listings');
-    return [];
-  }
-}
-
-// ============================================================================
-// SCRAPER: LEBONCOIN
-// ============================================================================
-
-class LeBonCoinScraper {
-  static buildSearchUrl(config) {
-    const location = config.locations[0];
-    const params = new URLSearchParams({
-      category: 'ventes_immobilieres',
-      locations: location.city || location.postal_code,
-      price: `${config.price_range?.min || 0}-${config.price_range?.max || 1000000}`,
-    });
-    return `https://www.leboncoin.fr/recherche?${params.toString()}`;
-  }
-
-  static parseListings(html) {
-    console.log('[LeBonCoin] Would parse HTML for listings');
-    return [];
-  }
-}
-
-// ============================================================================
-// SCRAPER: PAP
-// ============================================================================
-
-class PAPScraper {
-  static buildSearchUrl(config) {
-    const location = config.locations[0];
-    const params = new URLSearchParams({
-      location: location.city || location.postal_code,
-      price_min: config.price_range?.min || 0,
-      price_max: config.price_range?.max || 1000000,
-    });
-    return `https://www.pap.fr/annonce/vente-immobilier?${params.toString()}`;
-  }
-
-  static parseListings(html) {
-    console.log('[PAP] Would parse HTML for listings');
-    return [];
   }
 }
 
@@ -241,7 +260,7 @@ class FilterEngine {
       return false;
     }
 
-    // Keywords
+    // Keywords exclude
     const desc = (listing.description + ' ' + listing.title).toLowerCase();
     if (config.keywords_exclude) {
       for (const keyword of config.keywords_exclude) {
@@ -254,75 +273,139 @@ class FilterEngine {
 }
 
 // ============================================================================
+// MOCK DATA GENERATOR (for demonstration)
+// ============================================================================
+
+class MockDataGenerator {
+  static generateOpportunities(count = 150) {
+    const listings = [];
+    const cities = ['Paris', 'Lyon', 'Marseille', 'Toulouse', 'Nice', 'Nantes', 'Strasbourg', 'Montpellier', 'Bordeaux', 'Lille'];
+    const types = ['apartment', 'house', 'townhouse'];
+    const sources = ['seloger', 'leboncoin', 'pap', 'bieniici', 'orpi', 'immobilier', 'century21'];
+    const conditions = ['good', 'excellent', 'renovated', 'needing-cosmetics'];
+    const neighborhoods = ['accessible', 'quiet', 'near-transport', 'near-shops', 'low-noise', 'character', 'family-friendly'];
+
+    for (let i = 0; i < count; i++) {
+      const sqm = 50 + Math.random() * 250;
+      const price = 100000 + Math.random() * 600000;
+      const rooms = 2 + Math.floor(Math.random() * 4);
+      const isExcellent = Math.random() < 0.2;
+      const hasOutdoor = Math.random() < 0.6;
+
+      listings.push({
+        id: `listing-${Date.now()}-${i}`,
+        source: sources[Math.floor(Math.random() * sources.length)],
+        title: `${types[Math.floor(Math.random() * types.length)].charAt(0).toUpperCase()}${types[Math.floor(Math.random() * types.length)].slice(1)} in ${cities[Math.floor(Math.random() * cities.length)]}`,
+        price: Math.floor(price),
+        currency: 'EUR',
+        city: cities[Math.floor(Math.random() * cities.length)],
+        postal_code: '75' + Math.floor(Math.random() * 1000),
+        property_type: types[Math.floor(Math.random() * types.length)],
+        rooms,
+        bedrooms: Math.floor(rooms * 0.8),
+        sqm: Math.floor(sqm),
+        condition: isExcellent ? 'excellent' : conditions[Math.floor(Math.random() * (conditions.length - 1))],
+        parking: Math.random() < 0.5,
+        outdoor_space: hasOutdoor ? neighborhoods[Math.floor(Math.random() * neighborhoods.length)] : null,
+        description: neighborhoods.slice(0, 3).join(', ') + '. ' + (isExcellent ? 'Recently renovated' : 'Good condition'),
+        address: `${Math.floor(Math.random() * 200)} Rue de ${cities[Math.floor(Math.random() * cities.length)]}`,
+        posted_at: new Date(Date.now() - Math.random() * 30 * 24 * 60 * 60 * 1000).toISOString(),
+        url: `https://example.com/listing-${i}`,
+        agent: `Agent ${Math.floor(Math.random() * 100)}`,
+      });
+    }
+
+    return listings;
+  }
+}
+
+// ============================================================================
 // MAIN ORCHESTRATOR
 // ============================================================================
 
-class RealEstateScraper {
+class RealEstateScannerV2 {
   constructor(dataDir) {
     this.config = loadConfig();
     this.storage = new StorageManager(dataDir);
+    this.scorer = new OpportunityScorer(this.config);
   }
 
   async run() {
     console.log('='.repeat(80));
-    console.log('REAL ESTATE SCANNER - STARTING RUN');
+    console.log('REAL ESTATE SCANNER v2.0 - BEST OPPORTUNITIES');
     console.log('='.repeat(80));
     console.log(`Time: ${new Date().toISOString()}`);
 
     const previousListings = this.storage.loadListings();
     const alertedIds = this.storage.loadAlertedListings();
-    const newListings = [];
+    const topOpportunities = [];
 
     try {
-      // Fetch from all sources
+      // Fetch from all sources (currently mock data for testing)
+      console.log(`\n🔍 Fetching from ${this.config.sources?.length || 7} sources...`);
       const allListings = await this.fetchAllSources();
+      console.log(`   📊 Total listings fetched: ${allListings.length}`);
 
       // Filter by criteria
       const filteredListings = allListings.filter((listing) =>
         FilterEngine.matches(listing, this.config)
       );
+      console.log(`   ✅ After filtering: ${filteredListings.length}`);
 
-      console.log(`\n📊 Results:`);
-      console.log(`   Total found: ${allListings.length}`);
-      console.log(`   After filtering: ${filteredListings.length}`);
+      // Score each listing
+      const scoredListings = filteredListings.map((listing) => {
+        const score = this.scorer.score(listing);
+        listing.score = score.overall;
+        listing.score_breakdown = score.components;
+        return listing;
+      });
 
-      // Detect new listings
+      // Sort by score (best opportunities first)
+      scoredListings.sort((a, b) => b.score - a.score);
+
+      // Find top opportunities (new + high score)
       const currentIds = new Set(Object.keys(previousListings));
-      for (const listing of filteredListings) {
+      for (const listing of scoredListings) {
         if (!currentIds.has(listing.id) && !alertedIds.has(listing.id)) {
-          newListings.push(listing);
-          alertedIds.add(listing.id);
+          if (listing.score >= (this.config.opportunity_scoring?.min_score || 7)) {
+            topOpportunities.push(listing);
+            alertedIds.add(listing.id);
+          }
         }
       }
 
-      console.log(`   ✨ NEW listings: ${newListings.length}`);
+      console.log(`   ⭐ TOP OPPORTUNITIES (score ≥ ${this.config.opportunity_scoring?.min_score || 7}): ${topOpportunities.length}`);
 
       // Save state
       const listingsObj = {};
-      for (const listing of filteredListings) {
+      for (const listing of scoredListings) {
         listingsObj[listing.id] = listing;
       }
       this.storage.saveListings(listingsObj);
       this.storage.saveAlertedListings(alertedIds);
 
-      // Log new listings
-      for (const listing of newListings) {
+      // Log new opportunities
+      for (const listing of topOpportunities) {
         this.storage.appendHistory(listing);
         this.storage.appendAlert({
           timestamp: new Date().toISOString(),
           listing_id: listing.id,
           title: listing.title,
           price: listing.price,
+          score: listing.score,
           url: listing.url,
+          reason: this.generateReason(listing),
         });
       }
 
       // Generate report
       const report = this.generateReport(
-        filteredListings,
-        newListings,
+        scoredListings,
+        topOpportunities,
         previousListings
       );
+      
+      this.storage.saveReport(report);
       return report;
     } catch (err) {
       console.error('Error during scan:', err);
@@ -331,57 +414,71 @@ class RealEstateScraper {
   }
 
   async fetchAllSources() {
-    const listings = [];
-
-    for (const source of this.config.sources) {
-      try {
-        console.log(`\n🔍 Fetching from ${source}...`);
-
-        let url = '';
-        if (source === 'seloger') url = SelogerScraper.buildSearchUrl(this.config);
-        if (source === 'leboncoin')
-          url = LeBonCoinScraper.buildSearchUrl(this.config);
-        if (source === 'pap') url = PAPScraper.buildSearchUrl(this.config);
-
-        console.log(`   URL: ${url}`);
-        // In real implementation, would fetch and parse here
-        // For now, mock data for testing
-      } catch (err) {
-        console.warn(`   ⚠️  Error fetching ${source}:`, err.message);
-      }
-    }
-
-    return listings;
+    // For now, return mock data. In production, would use web_fetch or playwright
+    console.log('   📝 Using test data generator');
+    return MockDataGenerator.generateOpportunities(150);
   }
 
-  generateReport(allListings, newListings, previousListings) {
-    const report = {
+  generateReason(listing) {
+    const score = listing.score;
+    const price_per_sqm = Math.round(listing.price / listing.property.sqm);
+    const reasons = [];
+
+    if (listing.score_breakdown.price_ratio > 0.7) {
+      reasons.push(`Great price (€${price_per_sqm}/m² vs target €${this.scorer.target_price_per_sqm}/m²)`);
+    }
+    if (listing.score_breakdown.space_per_euro > 0.8) {
+      reasons.push('Excellent space for the price');
+    }
+    if (listing.property.condition === 'excellent' || listing.property.condition === 'renovated') {
+      reasons.push('Move-in ready condition');
+    }
+    if (listing.property.outdoor_space) {
+      reasons.push(`Has ${listing.property.outdoor_space}`);
+    }
+
+    return reasons.join(' • ') || 'Strong opportunity score';
+  }
+
+  generateReport(allListings, topOpportunities, previousListings) {
+    // Group by score tier
+    const by_tier = {
+      excellent: topOpportunities.filter(l => l.score >= 9),
+      very_good: topOpportunities.filter(l => l.score >= 8 && l.score < 9),
+      good: topOpportunities.filter(l => l.score >= 7 && l.score < 8),
+    };
+
+    return {
       timestamp: new Date().toISOString(),
       summary: {
         total_found: allListings.length,
-        new_listings: newListings.length,
-        previously_known: allListings.length - newListings.length,
-        total_in_db: Object.keys(previousListings).length,
+        top_opportunities: topOpportunities.length,
+        excellent: by_tier.excellent.length,
+        very_good: by_tier.very_good.length,
+        good: by_tier.good.length,
       },
-      new_listings: newListings,
+      top_opportunities: topOpportunities.slice(0, 20),
       statistics: {
-        avg_price: this.calculateAvgPrice(allListings),
+        avg_price: this.calculateAvgPrice(topOpportunities),
+        avg_score: this.calculateAvgScore(topOpportunities),
         price_range: {
-          min: Math.min(...allListings.map((l) => l.price)),
-          max: Math.max(...allListings.map((l) => l.price)),
+          min: Math.min(...topOpportunities.map((l) => l.price)),
+          max: Math.max(...topOpportunities.map((l) => l.price)),
         },
-        by_type: this.groupByType(allListings),
-        by_location: this.groupByLocation(allListings),
+        by_city: this.groupByCity(topOpportunities),
+        by_type: this.groupByType(topOpportunities),
       },
     };
-
-    console.log(`\n📈 Report generated`);
-    return report;
   }
 
   calculateAvgPrice(listings) {
     if (listings.length === 0) return 0;
     return Math.round(listings.reduce((sum, l) => sum + l.price, 0) / listings.length);
+  }
+
+  calculateAvgScore(listings) {
+    if (listings.length === 0) return 0;
+    return (listings.reduce((sum, l) => sum + l.score, 0) / listings.length).toFixed(1);
   }
 
   groupByType(listings) {
@@ -393,7 +490,7 @@ class RealEstateScraper {
     return groups;
   }
 
-  groupByLocation(listings) {
+  groupByCity(listings) {
     const groups = {};
     for (const listing of listings) {
       const city = listing.location.city || 'unknown';
@@ -409,20 +506,15 @@ class RealEstateScraper {
 
 async function main() {
   const dataDir = path.join(__dirname, 'data');
-  const scraper = new RealEstateScraper(dataDir);
+  const scraper = new RealEstateScannerV2(dataDir);
 
   try {
     const report = await scraper.run();
 
     console.log(`\n${'='.repeat(80)}`);
-    console.log('REPORT:');
+    console.log('OPPORTUNITIES REPORT:');
     console.log(JSON.stringify(report, null, 2));
     console.log(`${'='.repeat(80)}\n`);
-
-    // Write report to file
-    const reportPath = path.join(dataDir, `report-${Date.now()}.json`);
-    fs.writeFileSync(reportPath, JSON.stringify(report, null, 2));
-    console.log(`✅ Report saved to: ${reportPath}`);
 
     process.exit(0);
   } catch (err) {
@@ -436,11 +528,8 @@ if (require.main === module) {
 }
 
 module.exports = {
-  RealEstateScraper,
-  ListingParser,
+  RealEstateScannerV2,
+  OpportunityScorer,
   FilterEngine,
-  StorageManager,
-  SelogerScraper,
-  LeBonCoinScraper,
-  PAPScraper,
+  ListingParser,
 };

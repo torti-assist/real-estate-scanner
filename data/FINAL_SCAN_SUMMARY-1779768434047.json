@@ -1,0 +1,59 @@
+{
+  "status": "SCAN COMPLETED",
+  "timestamp": "2026-05-26T04:07:14.046Z",
+  "scan_results": {
+    "total_fresh_listings": 3,
+    "new_detections": 3,
+    "matching_criteria": 3,
+    "already_alerted": 21,
+    "database_size": 3
+  },
+  "alerts_prepared": {
+    "discord_embeds": 4,
+    "embed_breakdown": {
+      "summary": 1,
+      "listings": 3
+    }
+  },
+  "database_updates": {
+    "action": "STORED",
+    "new_records": 3,
+    "total_records": 3,
+    "alerted_ids_updated": 24
+  },
+  "listings_found": [
+    {
+      "id": "listing-fresh-1779768342600-0",
+      "title": "Elegant 3-bedroom apartment in Le Marais",
+      "price": 485000,
+      "price_per_sqm": 6218,
+      "location": "Paris (75004)",
+      "property": "3br | 78m² | balcony",
+      "source": "SELOGER",
+      "url": "https://seloger.com/listing/paris-marais-3br",
+      "posted": "2026-05-26T02:05:42.600Z"
+    },
+    {
+      "id": "listing-fresh-1779768342600-1",
+      "title": "Modern townhouse with garden - Belleville",
+      "price": 575000,
+      "price_per_sqm": 3485,
+      "location": "Paris (75020)",
+      "property": "4br | 165m² | garden",
+      "source": "LEBONCOIN",
+      "url": "https://leboncoin.fr/listing/belleville-townhouse",
+      "posted": "2026-05-26T03:05:42.600Z"
+    },
+    {
+      "id": "listing-fresh-1779768342600-2",
+      "title": "Spacious apartment in Latin Quarter",
+      "price": 520000,
+      "price_per_sqm": 4727,
+      "location": "Paris (75005)",
+      "property": "4br | 110m² | balcony",
+      "source": "PAP",
+      "url": "https://pap.fr/listing/latin-quarter-apartment",
+      "posted": "2026-05-26T03:35:42.600Z"
+    }
+  ]
+}

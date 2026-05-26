@@ -1,0 +1,666 @@
+{
+  "timestamp": "2026-05-25T22:05:59.724Z",
+  "scan_metadata": {
+    "sources_searched": [
+      "seloger",
+      "leboncoin",
+      "pap"
+    ],
+    "criteria": {
+      "price_range": {
+        "min": 150000,
+        "max": 600000
+      },
+      "location": "Paris",
+      "property_types": [
+        "apartment",
+        "house"
+      ],
+      "rooms": {
+        "min": 2,
+        "max": 5
+      },
+      "area": {
+        "min": 50,
+        "max": 200
+      }
+    },
+    "results_count": 18
+  },
+  "summary": {
+    "total_found": 18,
+    "new_listings": 18,
+    "previously_known": 0,
+    "total_in_db": 18
+  },
+  "new_listings": [
+    {
+      "id": "listing-1779746759660-0",
+      "source": "leboncoin",
+      "title": "Penthouse with terrace views",
+      "price": 596493.666428331,
+      "currency": "EUR",
+      "location": {
+        "address": "171 Rue de France",
+        "city": "Lyon",
+        "postal_code": "75006",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "house",
+        "rooms": 4,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "sqm": 69.83572476916709,
+        "floor": 4,
+        "parking": true,
+        "outdoor_space": "garden"
+      },
+      "description": "Recently renovated property in a quiet neighborhood",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+0"
+      ],
+      "url": "https://example.com/listing/0",
+      "agent": "Agent 96",
+      "phone": "0689622343",
+      "posted_at": "2026-05-25T16:06:14.531Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759661-1",
+      "source": "pap",
+      "title": "Contemporary apartment with parking",
+      "price": 231300.8651877914,
+      "currency": "EUR",
+      "location": {
+        "address": "38 Rue de France",
+        "city": "Paris",
+        "postal_code": "75007",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "house",
+        "rooms": 5,
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "sqm": 141.01562550596364,
+        "floor": 5,
+        "parking": false,
+        "outdoor_space": "terrace"
+      },
+      "description": "Recently renovated property in a quiet neighborhood",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+1"
+      ],
+      "url": "https://example.com/listing/1",
+      "agent": "Agent 2",
+      "phone": "0610170722",
+      "posted_at": "2026-05-25T16:26:54.705Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759661-2",
+      "source": "pap",
+      "title": "Charming townhouse with garden",
+      "price": 353550.90706473164,
+      "currency": "EUR",
+      "location": {
+        "address": "196 Rue de France",
+        "city": "Lyon",
+        "postal_code": "75008",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "house",
+        "rooms": 3,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "sqm": 52.575583562728674,
+        "floor": 2,
+        "parking": false,
+        "outdoor_space": "balcony"
+      },
+      "description": "Close to public transport and amenities",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+2"
+      ],
+      "url": "https://example.com/listing/2",
+      "agent": "Agent 3",
+      "phone": "0661480926",
+      "posted_at": "2026-05-25T18:15:51.505Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759661-3",
+      "source": "leboncoin",
+      "title": "Charming townhouse with garden",
+      "price": 154397.8475800727,
+      "currency": "EUR",
+      "location": {
+        "address": "127 Rue de France",
+        "city": "Lyon",
+        "postal_code": "75009",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 4,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "sqm": 122.59450344217929,
+        "floor": 3,
+        "parking": true,
+        "outdoor_space": "terrace"
+      },
+      "description": "Close to public transport and amenities",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+3"
+      ],
+      "url": "https://example.com/listing/3",
+      "agent": "Agent 98",
+      "phone": "0680062811",
+      "posted_at": "2026-05-22T03:44:02.220Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759661-4",
+      "source": "pap",
+      "title": "Spacious family home",
+      "price": 325758.5780349504,
+      "currency": "EUR",
+      "location": {
+        "address": "121 Rue de France",
+        "city": "Paris",
+        "postal_code": "75003",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 4,
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "sqm": 192.95193479452024,
+        "floor": 5,
+        "parking": true,
+        "outdoor_space": "balcony"
+      },
+      "description": "Ready to move in or for renovation",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+4"
+      ],
+      "url": "https://example.com/listing/4",
+      "agent": "Agent 14",
+      "phone": "0662651529",
+      "posted_at": "2026-05-24T04:36:04.482Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759661-5",
+      "source": "pap",
+      "title": "Spacious family home",
+      "price": 410740.6927610645,
+      "currency": "EUR",
+      "location": {
+        "address": "6 Rue de France",
+        "city": "Paris",
+        "postal_code": "750015",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "house",
+        "rooms": 2,
+        "bedrooms": 1,
+        "bathrooms": 2,
+        "sqm": 89.97979034093302,
+        "floor": 3,
+        "parking": false,
+        "outdoor_space": "terrace"
+      },
+      "description": "Beautiful natural light throughout",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+5"
+      ],
+      "url": "https://example.com/listing/5",
+      "agent": "Agent 37",
+      "phone": "0631775029",
+      "posted_at": "2026-05-21T14:52:15.548Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759661-6",
+      "source": "pap",
+      "title": "Investment property",
+      "price": 298680.0559827038,
+      "currency": "EUR",
+      "location": {
+        "address": "113 Rue de France",
+        "city": "Paris",
+        "postal_code": "75003",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "house",
+        "rooms": 5,
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "sqm": 59.24012506061578,
+        "floor": 1,
+        "parking": false,
+        "outdoor_space": "balcony"
+      },
+      "description": "Beautiful natural light throughout",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+6"
+      ],
+      "url": "https://example.com/listing/6",
+      "agent": "Agent 86",
+      "phone": "0673690103",
+      "posted_at": "2026-05-25T06:27:33.880Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759661-7",
+      "source": "seloger",
+      "title": "Investment property",
+      "price": 467357.4790280927,
+      "currency": "EUR",
+      "location": {
+        "address": "98 Rue de France",
+        "city": "Lyon",
+        "postal_code": "75001",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 2,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "sqm": 191.93416343237655,
+        "floor": 2,
+        "parking": true,
+        "outdoor_space": "balcony"
+      },
+      "description": "Close to public transport and amenities",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+7"
+      ],
+      "url": "https://example.com/listing/7",
+      "agent": "Agent 5",
+      "phone": "0640819742",
+      "posted_at": "2026-05-25T05:49:56.836Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759661-8",
+      "source": "pap",
+      "title": "Investment property",
+      "price": 280039.5129776123,
+      "currency": "EUR",
+      "location": {
+        "address": "130 Rue de France",
+        "city": "Lyon",
+        "postal_code": "750017",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "house",
+        "rooms": 2,
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "sqm": 76.50055237908663,
+        "floor": 2,
+        "parking": true,
+        "outdoor_space": "terrace"
+      },
+      "description": "Recently renovated property in a quiet neighborhood",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+8"
+      ],
+      "url": "https://example.com/listing/8",
+      "agent": "Agent 63",
+      "phone": "068333546",
+      "posted_at": "2026-05-23T11:20:56.917Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759661-9",
+      "source": "pap",
+      "title": "Spacious family home",
+      "price": 316186.7776768551,
+      "currency": "EUR",
+      "location": {
+        "address": "177 Rue de France",
+        "city": "Paris",
+        "postal_code": "75006",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 3,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "sqm": 88.23458869252553,
+        "floor": 5,
+        "parking": false,
+        "outdoor_space": "balcony"
+      },
+      "description": "Perfect for investment or primary residence",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+9"
+      ],
+      "url": "https://example.com/listing/9",
+      "agent": "Agent 10",
+      "phone": "0646229055",
+      "posted_at": "2026-05-19T09:20:21.703Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759662-10",
+      "source": "leboncoin",
+      "title": "Spacious family home",
+      "price": 474939.8252172866,
+      "currency": "EUR",
+      "location": {
+        "address": "100 Rue de France",
+        "city": "Paris",
+        "postal_code": "75009",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 3,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "sqm": 92.05272944866306,
+        "floor": 0,
+        "parking": false,
+        "outdoor_space": "garden"
+      },
+      "description": "Close to public transport and amenities",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+10"
+      ],
+      "url": "https://example.com/listing/10",
+      "agent": "Agent 52",
+      "phone": "067319485",
+      "posted_at": "2026-05-19T10:09:25.300Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759662-11",
+      "source": "pap",
+      "title": "Renovated 3-room house",
+      "price": 249009.00661068538,
+      "currency": "EUR",
+      "location": {
+        "address": "93 Rue de France",
+        "city": "Paris",
+        "postal_code": "750015",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 2,
+        "bedrooms": 3,
+        "bathrooms": 1,
+        "sqm": 191.52869348943446,
+        "floor": 2,
+        "parking": false,
+        "outdoor_space": "garden"
+      },
+      "description": "Ready to move in or for renovation",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+11"
+      ],
+      "url": "https://example.com/listing/11",
+      "agent": "Agent 97",
+      "phone": "0654768249",
+      "posted_at": "2026-05-23T17:34:46.427Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759662-12",
+      "source": "leboncoin",
+      "title": "Ground floor apartment",
+      "price": 302409.396145717,
+      "currency": "EUR",
+      "location": {
+        "address": "22 Rue de France",
+        "city": "Marseille",
+        "postal_code": "75008",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 2,
+        "bedrooms": 3,
+        "bathrooms": 1,
+        "sqm": 125.63799304743186,
+        "floor": 3,
+        "parking": false,
+        "outdoor_space": "garden"
+      },
+      "description": "Beautiful natural light throughout",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+12"
+      ],
+      "url": "https://example.com/listing/12",
+      "agent": "Agent 88",
+      "phone": "0650317275",
+      "posted_at": "2026-05-22T15:58:21.685Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759662-13",
+      "source": "leboncoin",
+      "title": "Character property with potential",
+      "price": 572002.3774109174,
+      "currency": "EUR",
+      "location": {
+        "address": "187 Rue de France",
+        "city": "Lyon",
+        "postal_code": "75000",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 3,
+        "bedrooms": 3,
+        "bathrooms": 1,
+        "sqm": 89.57987109750566,
+        "floor": 1,
+        "parking": false,
+        "outdoor_space": "terrace"
+      },
+      "description": "Close to public transport and amenities",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+13"
+      ],
+      "url": "https://example.com/listing/13",
+      "agent": "Agent 38",
+      "phone": "0686946389",
+      "posted_at": "2026-05-21T23:13:49.749Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759662-14",
+      "source": "pap",
+      "title": "Ground floor apartment",
+      "price": 231056.27310346806,
+      "currency": "EUR",
+      "location": {
+        "address": "77 Rue de France",
+        "city": "Paris",
+        "postal_code": "750016",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "house",
+        "rooms": 3,
+        "bedrooms": 1,
+        "bathrooms": 2,
+        "sqm": 108.734380912479,
+        "floor": 3,
+        "parking": true,
+        "outdoor_space": "balcony"
+      },
+      "description": "Close to public transport and amenities",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+14"
+      ],
+      "url": "https://example.com/listing/14",
+      "agent": "Agent 13",
+      "phone": "0690075275",
+      "posted_at": "2026-05-23T00:27:50.435Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759662-15",
+      "source": "seloger",
+      "title": "Charming townhouse with garden",
+      "price": 407033.9870139563,
+      "currency": "EUR",
+      "location": {
+        "address": "9 Rue de France",
+        "city": "Marseille",
+        "postal_code": "750016",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "house",
+        "rooms": 3,
+        "bedrooms": 3,
+        "bathrooms": 1,
+        "sqm": 136.2689453463589,
+        "floor": 3,
+        "parking": true,
+        "outdoor_space": "garden"
+      },
+      "description": "Excellent location near schools and shops",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+15"
+      ],
+      "url": "https://example.com/listing/15",
+      "agent": "Agent 44",
+      "phone": "0664945223",
+      "posted_at": "2026-05-20T16:45:45.198Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759662-16",
+      "source": "seloger",
+      "title": "Renovated 3-room house",
+      "price": 376957.73866026115,
+      "currency": "EUR",
+      "location": {
+        "address": "37 Rue de France",
+        "city": "Lyon",
+        "postal_code": "75006",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "house",
+        "rooms": 4,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "sqm": 88.49137615127373,
+        "floor": 4,
+        "parking": true,
+        "outdoor_space": "garden"
+      },
+      "description": "Perfect for investment or primary residence",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+16"
+      ],
+      "url": "https://example.com/listing/16",
+      "agent": "Agent 59",
+      "phone": "0676883805",
+      "posted_at": "2026-05-20T21:11:04.247Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    },
+    {
+      "id": "listing-1779746759662-17",
+      "source": "seloger",
+      "title": "Renovated 3-room house",
+      "price": 475901.04675623524,
+      "currency": "EUR",
+      "location": {
+        "address": "146 Rue de France",
+        "city": "Marseille",
+        "postal_code": "75004",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 2,
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "sqm": 114.9836697157489,
+        "floor": 0,
+        "parking": false,
+        "outdoor_space": "garden"
+      },
+      "description": "Excellent location near schools and shops",
+      "images": [
+        "https://via.placeholder.com/400x300?text=Property+17"
+      ],
+      "url": "https://example.com/listing/17",
+      "agent": "Agent 21",
+      "phone": "0632659813",
+      "posted_at": "2026-05-23T04:58:20.557Z",
+      "first_seen": "2026-05-25T22:05:59.672Z",
+      "last_updated": "2026-05-25T22:05:59.672Z",
+      "status": "active"
+    }
+  ],
+  "statistics": {
+    "avg_price": 362434,
+    "price_range": {
+      "min": 154397.8475800727,
+      "max": 596493.666428331
+    },
+    "by_type": {
+      "house": 9,
+      "apartment": 9
+    },
+    "by_location": {
+      "Lyon": 7,
+      "Paris": 8,
+      "Marseille": 3
+    }
+  }
+}

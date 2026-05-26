@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-05-26T05:27:18.864Z",
+  "summary": {
+    "total_found": 0,
+    "new_listings": 0,
+    "previously_known": 0,
+    "total_in_db": 3
+  },
+  "new_listings": [],
+  "statistics": {
+    "avg_price": 0,
+    "price_range": {
+      "min": null,
+      "max": null
+    },
+    "by_type": {},
+    "by_location": {}
+  }
+}

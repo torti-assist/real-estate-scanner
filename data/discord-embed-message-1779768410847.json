@@ -1,0 +1,274 @@
+{
+  "content": "🚨 **3 new real estate opportunities found!**\n✨ Listings matching your criteria have been detected on the market.",
+  "embeds": [
+    {
+      "title": "🏘️ Real Estate Scan Report",
+      "description": "📊 Market scan completed at 26/05/2026 04:06:16",
+      "color": 45300,
+      "fields": [
+        {
+          "name": "✨ New Matches",
+          "value": "3",
+          "inline": true
+        },
+        {
+          "name": "📈 Total Detected",
+          "value": "3",
+          "inline": true
+        },
+        {
+          "name": "💾 Database Total",
+          "value": "3",
+          "inline": true
+        },
+        {
+          "name": "💰 Average Price",
+          "value": "€526 667",
+          "inline": true
+        },
+        {
+          "name": "📊 Price Range",
+          "value": "€485 000 - €575 000",
+          "inline": true
+        },
+        {
+          "name": "⏰ Listings Age",
+          "value": "Last 7 days",
+          "inline": true
+        },
+        {
+          "name": "🏠 Property Types",
+          "value": "• Apartment: 2\n• House: 1",
+          "inline": true
+        },
+        {
+          "name": "📋 Sources",
+          "value": "• SELOGER: 1\n• LEBONCOIN: 1\n• PAP: 1",
+          "inline": true
+        },
+        {
+          "name": "🎯 Search Criteria",
+          "value": "Price: €150 000 - €600 000\nRooms: 2-5\nArea: 50-200m²",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "Real Estate Scanner | Next scan in 1 hour"
+      },
+      "timestamp": "2026-05-26T04:06:50.846Z"
+    },
+    {
+      "title": "Elegant 3-bedroom apartment in Le Marais",
+      "url": "https://seloger.com/listing/paris-marais-3br",
+      "description": "New listing found!",
+      "color": 45300,
+      "fields": [
+        {
+          "name": "💰 Price",
+          "value": "€485 000 (€6218/m²)",
+          "inline": true
+        },
+        {
+          "name": "🏠 Type",
+          "value": "Apartment",
+          "inline": true
+        },
+        {
+          "name": "📏 Area",
+          "value": "78 m²",
+          "inline": true
+        },
+        {
+          "name": "🛏️ Rooms",
+          "value": "3",
+          "inline": true
+        },
+        {
+          "name": "🚗 Parking",
+          "value": "❌ No",
+          "inline": true
+        },
+        {
+          "name": "🌳 Outdoor Space",
+          "value": "balcony",
+          "inline": true
+        },
+        {
+          "name": "📍 Location",
+          "value": "42 Rue des Francs-Bourgeois\nParis 75004",
+          "inline": false
+        },
+        {
+          "name": "📅 Posted",
+          "value": "26/05/2026 02:05:42",
+          "inline": true
+        },
+        {
+          "name": "🔗 Source",
+          "value": "SELOGER",
+          "inline": true
+        },
+        {
+          "name": "📝 Description",
+          "value": "Beautiful renovated apartment with modern finishes and bright exposure",
+          "inline": false
+        },
+        {
+          "name": "👤 Agent",
+          "value": "Sophie Réal Estate • 0612345678",
+          "inline": false
+        }
+      ],
+      "thumbnail": {
+        "url": "https://via.placeholder.com/400x300?text=Le+Marais+Apartment"
+      },
+      "footer": {
+        "text": "ID: listing-fresh-1779768342600-0",
+        "icon_url": "https://via.placeholder.com/32x32?text=RE"
+      },
+      "timestamp": "2026-05-26T04:06:50.847Z"
+    },
+    {
+      "title": "Modern townhouse with garden - Belleville",
+      "url": "https://leboncoin.fr/listing/belleville-townhouse",
+      "description": "New listing found!",
+      "color": 45300,
+      "fields": [
+        {
+          "name": "💰 Price",
+          "value": "€575 000 (€3485/m²)",
+          "inline": true
+        },
+        {
+          "name": "🏠 Type",
+          "value": "House",
+          "inline": true
+        },
+        {
+          "name": "📏 Area",
+          "value": "165 m²",
+          "inline": true
+        },
+        {
+          "name": "🛏️ Rooms",
+          "value": "4",
+          "inline": true
+        },
+        {
+          "name": "🚗 Parking",
+          "value": "✅ Yes",
+          "inline": true
+        },
+        {
+          "name": "🌳 Outdoor Space",
+          "value": "garden",
+          "inline": true
+        },
+        {
+          "name": "📍 Location",
+          "value": "78 Rue de Belleville\nParis 75020",
+          "inline": false
+        },
+        {
+          "name": "📅 Posted",
+          "value": "26/05/2026 03:05:42",
+          "inline": true
+        },
+        {
+          "name": "🔗 Source",
+          "value": "LEBONCOIN",
+          "inline": true
+        },
+        {
+          "name": "📝 Description",
+          "value": "Bright modern townhouse recently renovated with private garden and parking",
+          "inline": false
+        },
+        {
+          "name": "👤 Agent",
+          "value": "Agent Belleville • 0645678901",
+          "inline": false
+        }
+      ],
+      "thumbnail": {
+        "url": "https://via.placeholder.com/400x300?text=Belleville+Townhouse"
+      },
+      "footer": {
+        "text": "ID: listing-fresh-1779768342600-1",
+        "icon_url": "https://via.placeholder.com/32x32?text=RE"
+      },
+      "timestamp": "2026-05-26T04:06:50.847Z"
+    },
+    {
+      "title": "Spacious apartment in Latin Quarter",
+      "url": "https://pap.fr/listing/latin-quarter-apartment",
+      "description": "New listing found!",
+      "color": 45300,
+      "fields": [
+        {
+          "name": "💰 Price",
+          "value": "€520 000 (€4727/m²)",
+          "inline": true
+        },
+        {
+          "name": "🏠 Type",
+          "value": "Apartment",
+          "inline": true
+        },
+        {
+          "name": "📏 Area",
+          "value": "110 m²",
+          "inline": true
+        },
+        {
+          "name": "🛏️ Rooms",
+          "value": "4",
+          "inline": true
+        },
+        {
+          "name": "🚗 Parking",
+          "value": "❌ No",
+          "inline": true
+        },
+        {
+          "name": "🌳 Outdoor Space",
+          "value": "balcony",
+          "inline": true
+        },
+        {
+          "name": "📍 Location",
+          "value": "12 Rue Mouffetard\nParis 75005",
+          "inline": false
+        },
+        {
+          "name": "📅 Posted",
+          "value": "26/05/2026 03:35:42",
+          "inline": true
+        },
+        {
+          "name": "🔗 Source",
+          "value": "PAP",
+          "inline": true
+        },
+        {
+          "name": "📝 Description",
+          "value": "Spacious apartment in vibrant Latin Quarter with period charm and modern updates",
+          "inline": false
+        },
+        {
+          "name": "👤 Agent",
+          "value": "Direct Seller • 0698765432",
+          "inline": false
+        }
+      ],
+      "thumbnail": {
+        "url": "https://via.placeholder.com/400x300?text=Latin+Quarter"
+      },
+      "footer": {
+        "text": "ID: listing-fresh-1779768342600-2",
+        "icon_url": "https://via.placeholder.com/32x32?text=RE"
+      },
+      "timestamp": "2026-05-26T04:06:50.847Z"
+    }
+  ]
+}

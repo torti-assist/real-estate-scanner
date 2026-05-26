@@ -1,0 +1,131 @@
+{
+  "timestamp": "2026-05-26T00:05:54.191Z",
+  "scanConfig": {
+    "locations": [
+      {
+        "city": "Paris",
+        "postal_code": "75001-75020",
+        "region": "Île-de-France"
+      }
+    ],
+    "propertyTypes": [
+      "apartment",
+      "house"
+    ],
+    "priceRange": {
+      "min": 150000,
+      "max": 600000
+    },
+    "roomsRange": {
+      "min": 2,
+      "max": 5
+    },
+    "areaRange": {
+      "min": 50,
+      "max": 200
+    },
+    "requiredOutdoorSpace": [
+      "balcony",
+      "terrace",
+      "garden"
+    ]
+  },
+  "results": {
+    "totalInDatabase": 5,
+    "matchingCriteria": 3,
+    "newListingsDetected": 3,
+    "previouslyAlerted": 0
+  },
+  "newListings": [
+    {
+      "id": "listing-new-1779753929168-1",
+      "title": "Investment property",
+      "source": "pap",
+      "price": 541763,
+      "pricePerSqm": 3027,
+      "location": {
+        "address": "169 Rue de Clemenceau",
+        "city": "Lyon",
+        "postal_code": "75007",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 4,
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "sqm": 179,
+        "floor": 3,
+        "parking": false,
+        "outdoor_space": "terrace"
+      },
+      "description": "Contemporary finishes throughout",
+      "url": "https://example.com/listing/new/listing-new-1779753929168-1",
+      "agent": "Agent 24",
+      "phone": "0663721363",
+      "posted_at": "2026-05-25T20:05:29.167Z",
+      "firstSeen": "2026-05-26T00:05:29.167Z",
+      "images": "https://via.placeholder.com/400x300?text=New+Property+1"
+    },
+    {
+      "id": "listing-new-1779753929168-2",
+      "title": "Modern apartment with terrace",
+      "source": "seloger",
+      "price": 517241,
+      "pricePerSqm": 3643,
+      "location": {
+        "address": "121 Rue de Rivoli",
+        "city": "Paris",
+        "postal_code": "75007",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "house",
+        "rooms": 4,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "sqm": 142,
+        "floor": 2,
+        "parking": false,
+        "outdoor_space": "terrace"
+      },
+      "description": "Contemporary finishes throughout",
+      "url": "https://example.com/listing/new/listing-new-1779753929168-2",
+      "agent": "Agent 5",
+      "phone": "0600798343",
+      "posted_at": "2026-05-25T05:05:29.167Z",
+      "firstSeen": "2026-05-26T00:05:29.167Z",
+      "images": "https://via.placeholder.com/400x300?text=New+Property+2"
+    },
+    {
+      "id": "listing-new-1779753929168-3",
+      "title": "Charming townhouse",
+      "source": "pap",
+      "price": 530906,
+      "pricePerSqm": 2933,
+      "location": {
+        "address": "139 Rue de Rivoli",
+        "city": "Paris",
+        "postal_code": "75003",
+        "region": "Île-de-France"
+      },
+      "property": {
+        "type": "house",
+        "rooms": 2,
+        "bedrooms": 1,
+        "bathrooms": 2,
+        "sqm": 181,
+        "floor": 0,
+        "parking": true,
+        "outdoor_space": "terrace"
+      },
+      "description": "Bright and modern, recently renovated",
+      "url": "https://example.com/listing/new/listing-new-1779753929168-3",
+      "agent": "Agent 61",
+      "phone": "0659716941",
+      "posted_at": "2026-05-25T01:05:29.167Z",
+      "firstSeen": "2026-05-26T00:05:29.167Z",
+      "images": "https://via.placeholder.com/400x300?text=New+Property+3"
+    }
+  ]
+}

@@ -4,26 +4,90 @@
       "city": "Paris",
       "postal_code": "75001-75020",
       "region": "Île-de-France"
+    },
+    {
+      "city": "Lyon",
+      "postal_code": "69001-69009",
+      "region": "Auvergne-Rhône-Alpes"
+    },
+    {
+      "city": "Marseille",
+      "postal_code": "13001-13016",
+      "region": "Provence-Alpes-Côte d'Azur"
+    },
+    {
+      "city": "Toulouse",
+      "postal_code": "31000-31100",
+      "region": "Occitanie"
+    },
+    {
+      "city": "Nice",
+      "postal_code": "06000-06300",
+      "region": "Provence-Alpes-Côte d'Azur"
+    },
+    {
+      "city": "Nantes",
+      "postal_code": "44000-44300",
+      "region": "Pays de la Loire"
+    },
+    {
+      "city": "Strasbourg",
+      "postal_code": "67000-67200",
+      "region": "Grand Est"
+    },
+    {
+      "city": "Montpellier",
+      "postal_code": "34000-34090",
+      "region": "Occitanie"
+    },
+    {
+      "city": "Bordeaux",
+      "postal_code": "33000-33300",
+      "region": "Nouvelle-Aquitaine"
+    },
+    {
+      "city": "Lille",
+      "postal_code": "59000-59800",
+      "region": "Hauts-de-France"
     }
   ],
-  "property_type": ["apartment", "house"],
+  "opportunity_scoring": {
+    "enabled": true,
+    "min_score": 7.0,
+    "weights": {
+      "price_ratio": 0.3,
+      "location_score": 0.25,
+      "space_per_euro": 0.2,
+      "condition": 0.15,
+      "isolation_factor": 0.1
+    },
+    "target_price_per_sqm": 4000,
+    "preferred_neighborhoods": ["accessible", "quiet", "near-transport", "near-shops", "low-noise"]
+  },
+  "property_type": ["apartment", "house", "townhouse"],
   "price_range": {
-    "min": 150000,
-    "max": 600000
+    "min": 80000,
+    "max": 750000
   },
   "rooms": {
     "min": 2,
-    "max": 5
+    "max": 6
   },
   "area_sqm": {
-    "min": 50,
-    "max": 200
+    "min": 45,
+    "max": 350
   },
-  "outdoor_space": ["balcony", "terrace", "garden"],
-  "keywords_include": ["bright", "modern", "renovated"],
-  "keywords_exclude": ["studio", "shared"],
-  "sources": ["seloger", "leboncoin", "pap"],
-  "max_days_old": 7,
-  "notification_channel": "discord",
-  "alert_threshold_new_listings": 1
+  "outdoor_space": ["balcony", "terrace", "garden", "patio", "courtyard"],
+  "condition": ["good", "excellent", "renovated", "needing-cosmetics"],
+  "keywords_include": ["bright", "modern", "renovated", "spacious", "lumineux", "calme", "accessible", "quiet", "character", "potential"],
+  "keywords_exclude": ["studio", "shared", "colocation", "urgent", "vente-rapide", "needs-major-work", "renovation-needed", "building-issues"],
+  "sources": ["seloger", "leboncoin", "pap", "bieniici", "orpi", "immobilier", "proprietes", "century21", "agence-directe"],
+  "max_days_old": 30,
+  "min_confidence": 0.7,
+  "discord": {
+    "channel_name": "real-estate-opportunities",
+    "notification_type": "buy-advice",
+    "mention_on_top_opportunity": true,
+    "group_by": "score"
+  }
 }

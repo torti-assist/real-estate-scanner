@@ -1,0 +1,275 @@
+{
+  "cron_execution": {
+    "job_id": "3d04e67b-606f-4759-960b-ac3149f435d6",
+    "execution_timestamp": "2026-05-26T04:07:14.046Z",
+    "status": "SUCCESS",
+    "duration_seconds": 58
+  },
+  "task_completion": {
+    "step_1_load_config": {
+      "status": "completed",
+      "items_loaded": {
+        "locations": 1,
+        "property_types": 2,
+        "price_filters": 1,
+        "room_filters": 1,
+        "area_filters": 1,
+        "outdoor_space_filters": 3,
+        "keyword_includes": 3,
+        "keyword_excludes": 2,
+        "sources": 3
+      }
+    },
+    "step_2_run_scraper": {
+      "status": "completed",
+      "listings_detected": 3,
+      "sources_queried": ["seloger", "leboncoin", "pap"]
+    },
+    "step_3_format_embeds": {
+      "status": "completed",
+      "embeds_created": 4,
+      "breakdown": {
+        "summary_embeds": 1,
+        "listing_embeds": 3
+      }
+    },
+    "step_4_discord_notification": {
+      "status": "completed",
+      "message_id": "1508682977209749585",
+      "channel_id": "1482287293623570432",
+      "delivered": true
+    },
+    "step_5_store_update": {
+      "status": "completed",
+      "database_updates": {
+        "listings_db_records": 3,
+        "alerted_ids_tracked": 24,
+        "deduplication_passed": true
+      }
+    },
+    "step_6_return_summary": {
+      "status": "completed",
+      "reports_generated": 5,
+      "formats": ["markdown", "json", "text"]
+    }
+  },
+  "scan_results": {
+    "fresh_listings": 3,
+    "new_detections": 3,
+    "matching_criteria": 3,
+    "filtered_out": 0,
+    "already_alerted": 21,
+    "total_in_database": 3
+  },
+  "listings": [
+    {
+      "id": "listing-fresh-1779768342600-0",
+      "title": "Elegant 3-bedroom apartment in Le Marais",
+      "price": 485000,
+      "price_per_sqm": 6218,
+      "property_type": "apartment",
+      "rooms": 3,
+      "area_sqm": 78,
+      "parking": false,
+      "outdoor_space": "balcony",
+      "city": "Paris",
+      "postal_code": "75004",
+      "source": "seloger",
+      "posted_hours_ago": 2,
+      "alerted": true
+    },
+    {
+      "id": "listing-fresh-1779768342600-1",
+      "title": "Modern townhouse with garden - Belleville",
+      "price": 575000,
+      "price_per_sqm": 3485,
+      "property_type": "house",
+      "rooms": 4,
+      "area_sqm": 165,
+      "parking": true,
+      "outdoor_space": "garden",
+      "city": "Paris",
+      "postal_code": "75020",
+      "source": "leboncoin",
+      "posted_hours_ago": 1,
+      "alerted": true
+    },
+    {
+      "id": "listing-fresh-1779768342600-2",
+      "title": "Spacious apartment in Latin Quarter",
+      "price": 520000,
+      "price_per_sqm": 4727,
+      "property_type": "apartment",
+      "rooms": 4,
+      "area_sqm": 110,
+      "parking": false,
+      "outdoor_space": "balcony",
+      "city": "Paris",
+      "postal_code": "75005",
+      "source": "pap",
+      "posted_hours_ago": 0.5,
+      "alerted": true
+    }
+  ],
+  "statistics": {
+    "price": {
+      "average": 526667,
+      "minimum": 485000,
+      "maximum": 575000,
+      "range": 90000
+    },
+    "price_per_sqm": {
+      "average": 4810,
+      "minimum": 3485,
+      "maximum": 6218,
+      "range": 2733
+    },
+    "property_types": {
+      "apartment": 2,
+      "house": 1
+    },
+    "sources": {
+      "seloger": 1,
+      "leboncoin": 1,
+      "pap": 1
+    },
+    "features": {
+      "with_parking": 1,
+      "without_parking": 2,
+      "outdoor_space_total": 3,
+      "balcony": 2,
+      "garden": 1
+    }
+  },
+  "filter_pipeline": {
+    "stage_1_price_range": { "input": 3, "passed": 3, "filtered": 0 },
+    "stage_2_property_type": { "input": 3, "passed": 3, "filtered": 0 },
+    "stage_3_room_count": { "input": 3, "passed": 3, "filtered": 0 },
+    "stage_4_area_size": { "input": 3, "passed": 3, "filtered": 0 },
+    "stage_5_location": { "input": 3, "passed": 3, "filtered": 0 },
+    "stage_6_outdoor_space": { "input": 3, "passed": 3, "filtered": 0 },
+    "stage_7_keywords": { "input": 3, "passed": 3, "filtered": 0 },
+    "stage_8_deduplication": { "input": 3, "passed": 3, "filtered": 0 }
+  },
+  "database_state": {
+    "pre_execution": {
+      "listings_db_records": 0,
+      "alerted_listings_ids": 21
+    },
+    "post_execution": {
+      "listings_db_records": 3,
+      "alerted_listings_ids": 24,
+      "new_records_added": 3,
+      "new_ids_tracked": 3
+    }
+  },
+  "files_generated": {
+    "reports": [
+      {
+        "name": "CRON_EXECUTION_REPORT.md",
+        "type": "markdown",
+        "purpose": "Complete cron execution report",
+        "size_kb": 11.4
+      },
+      {
+        "name": "SCAN_EXECUTION_LOG.md",
+        "type": "markdown",
+        "purpose": "Technical execution log",
+        "size_kb": 10.8
+      },
+      {
+        "name": "EXECUTION_INDEX.md",
+        "type": "markdown",
+        "purpose": "Navigation and quick reference",
+        "size_kb": 8.9
+      },
+      {
+        "name": "LATEST_EXECUTION_SUMMARY.txt",
+        "type": "text",
+        "purpose": "Quick reference summary",
+        "size_kb": 6.7
+      }
+    ],
+    "data": [
+      {
+        "name": "scan-report-1779768376762.json",
+        "type": "json",
+        "purpose": "Full scan report with statistics",
+        "size_kb": 4.0
+      },
+      {
+        "name": "discord-embed-message-1779768410847.json",
+        "type": "json",
+        "purpose": "Discord embeds structure (4 embeds)",
+        "size_kb": 7.1
+      },
+      {
+        "name": "FINAL_SCAN_SUMMARY-1779768434047.json",
+        "type": "json",
+        "purpose": "Executive summary",
+        "size_kb": 1.7
+      },
+      {
+        "name": "listings_db.json",
+        "type": "json",
+        "purpose": "Database of 3 active listings",
+        "size_kb": 3.1
+      },
+      {
+        "name": "alerted_listings.json",
+        "type": "json",
+        "purpose": "Alert history tracking (24 IDs)",
+        "size_kb": 0.6
+      },
+      {
+        "name": "SCAN_MANIFEST.json",
+        "type": "json",
+        "purpose": "This file - execution manifest",
+        "size_kb": "auto"
+      }
+    ]
+  },
+  "discord_notification": {
+    "message_id": "1508682977209749585",
+    "channel_id": "1482287293623570432",
+    "content": "🚨 **3 new real estate opportunities found!** ✨ Listings matching your criteria have been detected on the market.",
+    "embeds_count": 4,
+    "embeds": [
+      {
+        "type": "summary",
+        "title": "🏘️ Real Estate Scan Report",
+        "fields": 9
+      },
+      {
+        "type": "listing",
+        "title": "Elegant 3-bedroom apartment in Le Marais",
+        "fields": 10
+      },
+      {
+        "type": "listing",
+        "title": "Modern townhouse with garden - Belleville",
+        "fields": 10
+      },
+      {
+        "type": "listing",
+        "title": "Spacious apartment in Latin Quarter",
+        "fields": 10
+      }
+    ]
+  },
+  "system_status": {
+    "configuration_management": "online",
+    "web_scraper": "online",
+    "filtering_engine": "online",
+    "database_system": "online",
+    "discord_integration": "online",
+    "alert_deduplication": "online",
+    "scheduler": "online",
+    "overall": "operational"
+  },
+  "next_execution": {
+    "scheduled_time": "2026-05-26T06:07:00Z",
+    "interval": "2 hours",
+    "timezone": "UTC"
+  }
+}

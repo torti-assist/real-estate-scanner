@@ -1,0 +1,380 @@
+{
+  "content": "🚨 **18 NEW real estate opportunities detected!** 🏠\nCheck the details below for full property information.",
+  "embeds": [
+    {
+      "title": "🏘️ Real Estate Scan Report",
+      "description": "📊 Market scan completed at 25/05/2026 22:05:59",
+      "color": 3447003,
+      "fields": [
+        {
+          "name": "✨ NEW Listings",
+          "value": "18",
+          "inline": true
+        },
+        {
+          "name": "📈 Total Found",
+          "value": "18",
+          "inline": true
+        },
+        {
+          "name": "💾 In Database",
+          "value": "18",
+          "inline": true
+        },
+        {
+          "name": "💰 Average Price",
+          "value": "€362 434",
+          "inline": true
+        },
+        {
+          "name": "📊 Price Range",
+          "value": "€154 397,848 - €596 493,666",
+          "inline": true
+        },
+        {
+          "name": "🏠 Property Types",
+          "value": "• house: 9\n• apartment: 9",
+          "inline": false
+        },
+        {
+          "name": "📍 By Location",
+          "value": "• Lyon: 7\n• Paris: 8\n• Marseille: 3",
+          "inline": false
+        },
+        {
+          "name": "🔍 Search Criteria",
+          "value": "apartment, house • 2-5 rooms • €150k-€600k",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "Real Estate Scanner | Mon 25 May 2026, 22:05 UTC"
+      }
+    },
+    {
+      "title": "Penthouse with terrace views",
+      "url": "https://example.com/listing/0",
+      "description": "📍 171 Rue de France",
+      "color": 3447003,
+      "fields": [
+        {
+          "name": "💰 Price",
+          "value": "€596 493,666 (€8541/m²)",
+          "inline": true
+        },
+        {
+          "name": "🏠 Type",
+          "value": "House",
+          "inline": true
+        },
+        {
+          "name": "📏 Area",
+          "value": "70 m²",
+          "inline": true
+        },
+        {
+          "name": "🛏️ Rooms",
+          "value": "4",
+          "inline": true
+        },
+        {
+          "name": "🚗 Parking",
+          "value": "✅ Yes",
+          "inline": true
+        },
+        {
+          "name": "🌳 Outdoor",
+          "value": "garden",
+          "inline": true
+        },
+        {
+          "name": "📍 Location",
+          "value": "Lyon (75006)",
+          "inline": false
+        },
+        {
+          "name": "📅 Posted",
+          "value": "25/05/2026 16:06:14",
+          "inline": true
+        },
+        {
+          "name": "📋 Source",
+          "value": "LEBONCOIN",
+          "inline": true
+        },
+        {
+          "name": "📝 Description",
+          "value": "Recently renovated property in a quiet neighborhood",
+          "inline": false
+        }
+      ],
+      "thumbnail": {
+        "url": "https://via.placeholder.com/400x300?text=Property+0"
+      },
+      "footer": {
+        "text": "ID: listing-177974675966..."
+      },
+      "timestamp": "2026-05-25T22:06:30.278Z"
+    },
+    {
+      "title": "Contemporary apartment with parking",
+      "url": "https://example.com/listing/1",
+      "description": "📍 38 Rue de France",
+      "color": 3447003,
+      "fields": [
+        {
+          "name": "💰 Price",
+          "value": "€231 300,865 (€1640/m²)",
+          "inline": true
+        },
+        {
+          "name": "🏠 Type",
+          "value": "House",
+          "inline": true
+        },
+        {
+          "name": "📏 Area",
+          "value": "141 m²",
+          "inline": true
+        },
+        {
+          "name": "🛏️ Rooms",
+          "value": "5",
+          "inline": true
+        },
+        {
+          "name": "🚗 Parking",
+          "value": "❌ No",
+          "inline": true
+        },
+        {
+          "name": "🌳 Outdoor",
+          "value": "terrace",
+          "inline": true
+        },
+        {
+          "name": "📍 Location",
+          "value": "Paris (75007)",
+          "inline": false
+        },
+        {
+          "name": "📅 Posted",
+          "value": "25/05/2026 16:26:54",
+          "inline": true
+        },
+        {
+          "name": "📋 Source",
+          "value": "PAP",
+          "inline": true
+        },
+        {
+          "name": "📝 Description",
+          "value": "Recently renovated property in a quiet neighborhood",
+          "inline": false
+        }
+      ],
+      "thumbnail": {
+        "url": "https://via.placeholder.com/400x300?text=Property+1"
+      },
+      "footer": {
+        "text": "ID: listing-177974675966..."
+      },
+      "timestamp": "2026-05-25T22:06:30.278Z"
+    },
+    {
+      "title": "Charming townhouse with garden",
+      "url": "https://example.com/listing/2",
+      "description": "📍 196 Rue de France",
+      "color": 3447003,
+      "fields": [
+        {
+          "name": "💰 Price",
+          "value": "€353 550,907 (€6725/m²)",
+          "inline": true
+        },
+        {
+          "name": "🏠 Type",
+          "value": "House",
+          "inline": true
+        },
+        {
+          "name": "📏 Area",
+          "value": "53 m²",
+          "inline": true
+        },
+        {
+          "name": "🛏️ Rooms",
+          "value": "3",
+          "inline": true
+        },
+        {
+          "name": "🚗 Parking",
+          "value": "❌ No",
+          "inline": true
+        },
+        {
+          "name": "🌳 Outdoor",
+          "value": "balcony",
+          "inline": true
+        },
+        {
+          "name": "📍 Location",
+          "value": "Lyon (75008)",
+          "inline": false
+        },
+        {
+          "name": "📅 Posted",
+          "value": "25/05/2026 18:15:51",
+          "inline": true
+        },
+        {
+          "name": "📋 Source",
+          "value": "PAP",
+          "inline": true
+        },
+        {
+          "name": "📝 Description",
+          "value": "Close to public transport and amenities",
+          "inline": false
+        }
+      ],
+      "thumbnail": {
+        "url": "https://via.placeholder.com/400x300?text=Property+2"
+      },
+      "footer": {
+        "text": "ID: listing-177974675966..."
+      },
+      "timestamp": "2026-05-25T22:06:30.278Z"
+    },
+    {
+      "title": "Charming townhouse with garden",
+      "url": "https://example.com/listing/3",
+      "description": "📍 127 Rue de France",
+      "color": 3447003,
+      "fields": [
+        {
+          "name": "💰 Price",
+          "value": "€154 397,848 (€1259/m²)",
+          "inline": true
+        },
+        {
+          "name": "🏠 Type",
+          "value": "Apartment",
+          "inline": true
+        },
+        {
+          "name": "📏 Area",
+          "value": "123 m²",
+          "inline": true
+        },
+        {
+          "name": "🛏️ Rooms",
+          "value": "4",
+          "inline": true
+        },
+        {
+          "name": "🚗 Parking",
+          "value": "✅ Yes",
+          "inline": true
+        },
+        {
+          "name": "🌳 Outdoor",
+          "value": "terrace",
+          "inline": true
+        },
+        {
+          "name": "📍 Location",
+          "value": "Lyon (75009)",
+          "inline": false
+        },
+        {
+          "name": "📅 Posted",
+          "value": "22/05/2026 03:44:02",
+          "inline": true
+        },
+        {
+          "name": "📋 Source",
+          "value": "LEBONCOIN",
+          "inline": true
+        },
+        {
+          "name": "📝 Description",
+          "value": "Close to public transport and amenities",
+          "inline": false
+        }
+      ],
+      "thumbnail": {
+        "url": "https://via.placeholder.com/400x300?text=Property+3"
+      },
+      "footer": {
+        "text": "ID: listing-177974675966..."
+      },
+      "timestamp": "2026-05-25T22:06:30.278Z"
+    },
+    {
+      "title": "Spacious family home",
+      "url": "https://example.com/listing/4",
+      "description": "📍 121 Rue de France",
+      "color": 3447003,
+      "fields": [
+        {
+          "name": "💰 Price",
+          "value": "€325 758,578 (€1688/m²)",
+          "inline": true
+        },
+        {
+          "name": "🏠 Type",
+          "value": "Apartment",
+          "inline": true
+        },
+        {
+          "name": "📏 Area",
+          "value": "193 m²",
+          "inline": true
+        },
+        {
+          "name": "🛏️ Rooms",
+          "value": "4",
+          "inline": true
+        },
+        {
+          "name": "🚗 Parking",
+          "value": "✅ Yes",
+          "inline": true
+        },
+        {
+          "name": "🌳 Outdoor",
+          "value": "balcony",
+          "inline": true
+        },
+        {
+          "name": "📍 Location",
+          "value": "Paris (75003)",
+          "inline": false
+        },
+        {
+          "name": "📅 Posted",
+          "value": "24/05/2026 04:36:04",
+          "inline": true
+        },
+        {
+          "name": "📋 Source",
+          "value": "PAP",
+          "inline": true
+        },
+        {
+          "name": "📝 Description",
+          "value": "Ready to move in or for renovation",
+          "inline": false
+        }
+      ],
+      "thumbnail": {
+        "url": "https://via.placeholder.com/400x300?text=Property+4"
+      },
+      "footer": {
+        "text": "ID: listing-177974675966..."
+      },
+      "timestamp": "2026-05-25T22:06:30.278Z"
+    }
+  ]
+}
