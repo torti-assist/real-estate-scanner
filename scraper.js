@@ -292,7 +292,7 @@ class MockDataGenerator {
       const isExcellent = Math.random() < 0.2;
       const hasOutdoor = Math.random() < 0.6;
 
-      listings.push({
+      const listingData = ListingParser.createListing({
         id: `listing-${Date.now()}-${i}`,
         source: sources[Math.floor(Math.random() * sources.length)],
         title: `${types[Math.floor(Math.random() * types.length)].charAt(0).toUpperCase()}${types[Math.floor(Math.random() * types.length)].slice(1)} in ${cities[Math.floor(Math.random() * cities.length)]}`,
@@ -313,6 +313,7 @@ class MockDataGenerator {
         url: `https://example.com/listing-${i}`,
         agent: `Agent ${Math.floor(Math.random() * 100)}`,
       });
+      listings.push(listingData);
     }
 
     return listings;
