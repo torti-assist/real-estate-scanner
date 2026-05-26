@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-05-26T11:43:21.129Z",
+  "summary": {
+    "total_found": 150,
+    "top_opportunities": 0,
+    "excellent": 0,
+    "very_good": 0,
+    "good": 0
+  },
+  "top_opportunities": [],
+  "statistics": {
+    "avg_price": 0,
+    "avg_score": 0,
+    "price_range": {
+      "min": null,
+      "max": null
+    },
+    "by_city": {},
+    "by_type": {}
+  }
+}

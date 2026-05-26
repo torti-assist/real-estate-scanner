@@ -1,0 +1,12 @@
+Rank,ID,Title,Price_EUR,Price_per_sqm_EUR,Size_sqm,Rooms,City,Region,Condition,Parking,Outdoor_Space,Source,Posted_Date,Score,URL
+1,listing-1779789780000-new-21,Townhouse in Lille,123289,436,283,4,Lille,Hauts-de-France,excellent,YES,garden,Immobilier,2026-05-26,7.41,https://example.com/listing-new-1779789780000-21
+2,listing-1779789780000-new-12,House in Paris,700497,3538,198,2,Paris,Île-de-France,good,YES,garden,LeBonCoin,2026-05-26,7.39,https://example.com/listing-new-1779789780000-12
+3,listing-1779789780000-new-6,Apartment in Bordeaux,570013,1863,306,4,Bordeaux,Nouvelle-Aquitaine,excellent,YES,patio,Century21,2026-05-25,7.35,https://example.com/listing-new-1779789780000-6
+4,listing-1779789780000-new-1,Apartment in Nantes,683228,2308,296,5,Nantes,Pays de la Loire,excellent,NO,patio,SeLoger,2026-05-25,7.31,https://example.com/listing-new-1779789780000-1
+5,listing-1779789780000-new-5,House in Bordeaux,705649,3376,209,5,Bordeaux,Nouvelle-Aquitaine,good,NO,courtyard,Century21,2026-05-25,7.21,https://example.com/listing-new-1779789780000-5
+6,listing-1779789780000-new-16,Townhouse in Marseille,286049,2860,100,3,Marseille,Provence-Alpes-Côte d'Azur,renovated,NO,garden,PAP,2026-05-25,7.17,https://example.com/listing-new-1779789780000-16
+7,listing-1779789780000-new-9,Apartment in Nantes,642964,2948,218,2,Nantes,Pays de la Loire,excellent,YES,patio,ORPI,2026-05-25,7.15,https://example.com/listing-new-1779789780000-9
+8,listing-1779789780000-new-20,House in Toulouse,506023,3614,140,3,Toulouse,Occitanie,renovated,NO,garden,LeBonCoin,2026-05-26,7.06,https://example.com/listing-new-1779789780000-20
+9,listing-1779789780000-new-0,House in Toulouse,425714,1626,262,2,Toulouse,Occitanie,renovated,NO,patio,PAP,2026-05-26,7.05,https://example.com/listing-new-1779789780000-0
+10,listing-1779789780000-new-2,Apartment in Marseille,551006,1880,293,2,Marseille,Provence-Alpes-Côte d'Azur,renovated,YES,balcony,SeLoger,2026-05-25,7.02,https://example.com/listing-new-1779789780000-2
+11,listing-1779789780000-new-7,Apartment in Lyon,269947,1350,200,5,Lyon,Auvergne-Rhône-Alpes,renovated,YES,courtyard,Immobilier,2026-05-26,7.01,https://example.com/listing-new-1779789780000-7

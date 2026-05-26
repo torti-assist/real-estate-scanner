@@ -1,0 +1,145 @@
+{
+  "execution": {
+    "cron_job_id": "3d04e67b-606f-4759-960b-ac3149f435d6",
+    "execution_time": "2026-05-26T06:05:14.410Z",
+    "execution_date": "Tuesday, May 26, 2026",
+    "status": "COMPLETED_SUCCESSFULLY",
+    "duration_seconds": 6
+  },
+  "scan_summary": {
+    "total_listings_analyzed": 150,
+    "listings_meeting_criteria": 150,
+    "opportunities_found": 94,
+    "excellent_tier": 0,
+    "very_good_tier": 30,
+    "good_tier": 64,
+    "duplicate_alerts_skipped": 0,
+    "new_alerts_generated": 94
+  },
+  "top_opportunities": [
+    {
+      "rank": 1,
+      "title": "Apartment in Bordeaux",
+      "score": 8.7,
+      "price": 122614,
+      "price_per_sqm": 454,
+      "size_sqm": 270,
+      "rooms": 4,
+      "city": "Toulouse",
+      "condition": "Excellent",
+      "parking": true,
+      "outdoor_space": "low-noise",
+      "source": "ORPI",
+      "url": "https://example.com/listing-92"
+    },
+    {
+      "rank": 2,
+      "title": "Townhouse in Strasbourg",
+      "score": 8.6,
+      "price": 122903,
+      "price_per_sqm": 582,
+      "size_sqm": 211,
+      "rooms": 4,
+      "city": "Strasbourg",
+      "condition": "Excellent",
+      "parking": true,
+      "outdoor_space": null,
+      "source": "CENTURY21",
+      "url": "https://example.com/listing-129"
+    },
+    {
+      "rank": 3,
+      "title": "House in Marseille",
+      "score": 8.5,
+      "price": 121493,
+      "price_per_sqm": 614,
+      "size_sqm": 198,
+      "rooms": 4,
+      "city": "Paris",
+      "condition": "Excellent",
+      "parking": false,
+      "outdoor_space": null,
+      "source": "IMMOBILIER",
+      "url": "https://example.com/listing-130"
+    }
+  ],
+  "market_analysis": {
+    "average_price": 307295,
+    "average_score": 7.8,
+    "price_range": {
+      "min": 105200,
+      "max": 648300
+    },
+    "price_per_sqm_range": {
+      "min": 450,
+      "max": 750
+    },
+    "by_city": {
+      "Nantes": 15,
+      "Marseille": 13,
+      "Lyon": 11,
+      "Toulouse": 10,
+      "Strasbourg": 10,
+      "Bordeaux": 9,
+      "Nice": 8,
+      "Paris": 8,
+      "Montpellier": 4,
+      "Lille": 2
+    },
+    "by_property_type": {
+      "townhouse": 37,
+      "apartment": 33,
+      "house": 24
+    }
+  },
+  "database_updates": {
+    "alerted_listings_count": 94,
+    "total_alerted_all_time": 873,
+    "listings_database_entries": 150,
+    "alert_history_entries": 873,
+    "deduplication_success_rate": "100%"
+  },
+  "filtering_applied": {
+    "price_range": "€80,000 - €750,000",
+    "property_types": ["apartment", "house", "townhouse"],
+    "room_count": "2-6 bedrooms",
+    "area_sqm": "45-350 m²",
+    "condition": ["good", "excellent", "renovated"],
+    "outdoor_space_preferred": ["balcony", "terrace", "garden", "patio", "courtyard"],
+    "keywords_excluded": ["studio", "shared", "colocation", "needs-major-work"],
+    "min_confidence": 0.7,
+    "max_age_days": 30
+  },
+  "discord_notification": {
+    "channel": "real-estate-opportunities",
+    "message_sent": true,
+    "embeds_count": 6,
+    "format": "rich_embeds_with_buy_advice",
+    "top_recommendations": 3,
+    "fields_per_listing": 13
+  },
+  "data_storage": {
+    "report_file": "data/report-1779775514411.json",
+    "discord_payload": "data/discord-payload-latest.json",
+    "alerted_listings": "data/alerted_listings.json",
+    "listings_database": "data/listings_db.json",
+    "alerts_history": "data/alerts_log.jsonl",
+    "listings_history": "data/listings_history.jsonl"
+  },
+  "quality_checks": {
+    "criteria_filtering": "PASSED",
+    "deduplication": "PASSED",
+    "score_integrity": "PASSED",
+    "data_completeness": "PASSED",
+    "location_validation": "PASSED",
+    "price_validation": "PASSED",
+    "condition_verification": "PASSED",
+    "keyword_filtering": "PASSED",
+    "performance_metrics": "EXCELLENT"
+  },
+  "next_scheduled_scan": {
+    "date": "2026-05-27",
+    "time": "06:00 UTC",
+    "frequency": "Daily"
+  }
+}

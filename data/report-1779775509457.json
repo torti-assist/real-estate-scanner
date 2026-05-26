@@ -1,0 +1,817 @@
+{
+  "timestamp": "2026-05-26T06:05:09.456Z",
+  "summary": {
+    "total_found": 150,
+    "top_opportunities": 82,
+    "excellent": 0,
+    "very_good": 25,
+    "good": 57
+  },
+  "top_opportunities": [
+    {
+      "id": "listing-1779775508754-41",
+      "source": "seloger",
+      "title": "Tpartment in Bordeaux",
+      "price": 125065,
+      "currency": "EUR",
+      "location": {
+        "address": "161 Rue de Nice",
+        "city": "Marseille",
+        "postal_code": "75817",
+        "region": ""
+      },
+      "property": {
+        "type": "house",
+        "rooms": 5,
+        "bedrooms": 4,
+        "sqm": 252,
+        "parking": false,
+        "outdoor_space": null,
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Good condition",
+      "images": [],
+      "url": "https://example.com/listing-41",
+      "agent": "Agent 82",
+      "phone": "",
+      "posted_at": "2026-05-16T08:02:00.292Z",
+      "first_seen": "2026-05-26T06:05:08.754Z",
+      "last_updated": "2026-05-26T06:05:08.754Z",
+      "status": "active",
+      "score": 8.627782738095238,
+      "score_breakdown": {
+        "price_ratio": 0.8759275793650794,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508753-11",
+      "source": "seloger",
+      "title": "Hownhouse in Lille",
+      "price": 152298,
+      "currency": "EUR",
+      "location": {
+        "address": "131 Rue de Nantes",
+        "city": "Nantes",
+        "postal_code": "75858",
+        "region": ""
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 3,
+        "bedrooms": 2,
+        "sqm": 292,
+        "parking": false,
+        "outdoor_space": null,
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Recently renovated",
+      "images": [],
+      "url": "https://example.com/listing-11",
+      "agent": "Agent 48",
+      "phone": "",
+      "posted_at": "2026-05-18T16:30:54.107Z",
+      "first_seen": "2026-05-26T06:05:08.753Z",
+      "last_updated": "2026-05-26T06:05:08.753Z",
+      "status": "active",
+      "score": 8.608823630136985,
+      "score_breakdown": {
+        "price_ratio": 0.8696078767123288,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508755-148",
+      "source": "immobilier",
+      "title": "House in Nantes",
+      "price": 101853,
+      "currency": "EUR",
+      "location": {
+        "address": "33 Rue de Marseille",
+        "city": "Paris",
+        "postal_code": "75467",
+        "region": ""
+      },
+      "property": {
+        "type": "house",
+        "rooms": 4,
+        "bedrooms": 3,
+        "sqm": 281,
+        "parking": true,
+        "outdoor_space": null,
+        "condition": "renovated"
+      },
+      "description": "accessible, quiet, near-transport. Good condition",
+      "images": [],
+      "url": "https://example.com/listing-148",
+      "agent": "Agent 9",
+      "phone": "",
+      "posted_at": "2026-05-03T09:23:26.575Z",
+      "first_seen": "2026-05-26T06:05:08.755Z",
+      "last_updated": "2026-05-26T06:05:08.755Z",
+      "status": "active",
+      "score": 8.578150355871886,
+      "score_breakdown": {
+        "price_ratio": 0.9093834519572954,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 0.9,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508754-64",
+      "source": "pap",
+      "title": "Hpartment in Lille",
+      "price": 159761,
+      "currency": "EUR",
+      "location": {
+        "address": "9 Rue de Toulouse",
+        "city": "Nice",
+        "postal_code": "75107",
+        "region": ""
+      },
+      "property": {
+        "type": "house",
+        "rooms": 3,
+        "bedrooms": 2,
+        "sqm": 265,
+        "parking": true,
+        "outdoor_space": "character",
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Recently renovated",
+      "images": [],
+      "url": "https://example.com/listing-64",
+      "agent": "Agent 44",
+      "phone": "",
+      "posted_at": "2026-05-21T08:44:49.276Z",
+      "first_seen": "2026-05-26T06:05:08.754Z",
+      "last_updated": "2026-05-26T06:05:08.754Z",
+      "status": "active",
+      "score": 8.547846226415095,
+      "score_breakdown": {
+        "price_ratio": 0.8492820754716981,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508754-52",
+      "source": "immobilier",
+      "title": "House in Montpellier",
+      "price": 170719,
+      "currency": "EUR",
+      "location": {
+        "address": "29 Rue de Paris",
+        "city": "Bordeaux",
+        "postal_code": "75319",
+        "region": ""
+      },
+      "property": {
+        "type": "townhouse",
+        "rooms": 4,
+        "bedrooms": 3,
+        "sqm": 270,
+        "parking": true,
+        "outdoor_space": null,
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Recently renovated",
+      "images": [],
+      "url": "https://example.com/listing-52",
+      "agent": "Agent 88",
+      "phone": "",
+      "posted_at": "2026-05-15T15:13:39.482Z",
+      "first_seen": "2026-05-26T06:05:08.754Z",
+      "last_updated": "2026-05-26T06:05:08.754Z",
+      "status": "active",
+      "score": 8.525780555555556,
+      "score_breakdown": {
+        "price_ratio": 0.8419268518518519,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508754-83",
+      "source": "leboncoin",
+      "title": "Aouse in Lille",
+      "price": 101167,
+      "currency": "EUR",
+      "location": {
+        "address": "137 Rue de Lyon",
+        "city": "Nantes",
+        "postal_code": "75219",
+        "region": ""
+      },
+      "property": {
+        "type": "townhouse",
+        "rooms": 2,
+        "bedrooms": 1,
+        "sqm": 203,
+        "parking": true,
+        "outdoor_space": null,
+        "condition": "renovated"
+      },
+      "description": "accessible, quiet, near-transport. Good condition",
+      "images": [],
+      "url": "https://example.com/listing-83",
+      "agent": "Agent 1",
+      "phone": "",
+      "posted_at": "2026-05-20T04:09:41.189Z",
+      "first_seen": "2026-05-26T06:05:08.754Z",
+      "last_updated": "2026-05-26T06:05:08.754Z",
+      "status": "active",
+      "score": 8.476230295566502,
+      "score_breakdown": {
+        "price_ratio": 0.8754100985221674,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 0.9,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508755-136",
+      "source": "seloger",
+      "title": "Aouse in Paris",
+      "price": 106516,
+      "currency": "EUR",
+      "location": {
+        "address": "58 Rue de Marseille",
+        "city": "Marseille",
+        "postal_code": "75320",
+        "region": ""
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 4,
+        "bedrooms": 3,
+        "sqm": 152,
+        "parking": false,
+        "outdoor_space": "family-friendly",
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Good condition",
+      "images": [],
+      "url": "https://example.com/listing-136",
+      "agent": "Agent 72",
+      "phone": "",
+      "posted_at": "2026-05-07T15:57:04.270Z",
+      "first_seen": "2026-05-26T06:05:08.755Z",
+      "last_updated": "2026-05-26T06:05:08.755Z",
+      "status": "active",
+      "score": 8.474427631578948,
+      "score_breakdown": {
+        "price_ratio": 0.8248092105263158,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508753-33",
+      "source": "immobilier",
+      "title": "Touse in Nantes",
+      "price": 150710,
+      "currency": "EUR",
+      "location": {
+        "address": "53 Rue de Lille",
+        "city": "Nice",
+        "postal_code": "75541",
+        "region": ""
+      },
+      "property": {
+        "type": "house",
+        "rooms": 4,
+        "bedrooms": 3,
+        "sqm": 213,
+        "parking": true,
+        "outdoor_space": null,
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Recently renovated",
+      "images": [],
+      "url": "https://example.com/listing-33",
+      "agent": "Agent 26",
+      "phone": "",
+      "posted_at": "2026-04-26T13:35:30.196Z",
+      "first_seen": "2026-05-26T06:05:08.753Z",
+      "last_updated": "2026-05-26T06:05:08.753Z",
+      "status": "active",
+      "score": 8.469330985915493,
+      "score_breakdown": {
+        "price_ratio": 0.8231103286384976,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508753-32",
+      "source": "bieniici",
+      "title": "Touse in Paris",
+      "price": 122150,
+      "currency": "EUR",
+      "location": {
+        "address": "171 Rue de Paris",
+        "city": "Marseille",
+        "postal_code": "75797",
+        "region": ""
+      },
+      "property": {
+        "type": "townhouse",
+        "rooms": 2,
+        "bedrooms": 1,
+        "sqm": 164,
+        "parking": true,
+        "outdoor_space": "accessible",
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Good condition",
+      "images": [],
+      "url": "https://example.com/listing-32",
+      "agent": "Agent 30",
+      "phone": "",
+      "posted_at": "2026-05-03T09:04:05.266Z",
+      "first_seen": "2026-05-26T06:05:08.753Z",
+      "last_updated": "2026-05-26T06:05:08.753Z",
+      "status": "active",
+      "score": 8.441387195121951,
+      "score_breakdown": {
+        "price_ratio": 0.813795731707317,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508755-139",
+      "source": "seloger",
+      "title": "Touse in Montpellier",
+      "price": 107258,
+      "currency": "EUR",
+      "location": {
+        "address": "33 Rue de Lille",
+        "city": "Lille",
+        "postal_code": "7593",
+        "region": ""
+      },
+      "property": {
+        "type": "townhouse",
+        "rooms": 2,
+        "bedrooms": 1,
+        "sqm": 222,
+        "parking": false,
+        "outdoor_space": null,
+        "condition": "good"
+      },
+      "description": "accessible, quiet, near-transport. Good condition",
+      "images": [],
+      "url": "https://example.com/listing-139",
+      "agent": "Agent 63",
+      "phone": "",
+      "posted_at": "2026-05-15T17:51:12.994Z",
+      "first_seen": "2026-05-26T06:05:08.755Z",
+      "last_updated": "2026-05-26T06:05:08.755Z",
+      "status": "active",
+      "score": 8.41264189189189,
+      "score_breakdown": {
+        "price_ratio": 0.879213963963964,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 0.85,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508754-73",
+      "source": "pap",
+      "title": "Tpartment in Toulouse",
+      "price": 187099,
+      "currency": "EUR",
+      "location": {
+        "address": "6 Rue de Toulouse",
+        "city": "Nice",
+        "postal_code": "75336",
+        "region": ""
+      },
+      "property": {
+        "type": "house",
+        "rooms": 4,
+        "bedrooms": 3,
+        "sqm": 223,
+        "parking": true,
+        "outdoor_space": "near-shops",
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Recently renovated",
+      "images": [],
+      "url": "https://example.com/listing-73",
+      "agent": "Agent 28",
+      "phone": "",
+      "posted_at": "2026-05-17T17:26:26.432Z",
+      "first_seen": "2026-05-26T06:05:08.754Z",
+      "last_updated": "2026-05-26T06:05:08.754Z",
+      "status": "active",
+      "score": 8.370743273542601,
+      "score_breakdown": {
+        "price_ratio": 0.7902477578475336,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508754-56",
+      "source": "orpi",
+      "title": "Tpartment in Paris",
+      "price": 177857,
+      "currency": "EUR",
+      "location": {
+        "address": "84 Rue de Montpellier",
+        "city": "Toulouse",
+        "postal_code": "75987",
+        "region": ""
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 3,
+        "bedrooms": 2,
+        "sqm": 195,
+        "parking": false,
+        "outdoor_space": "quiet",
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Recently renovated",
+      "images": [],
+      "url": "https://example.com/listing-56",
+      "agent": "Agent 68",
+      "phone": "",
+      "posted_at": "2026-05-11T04:24:27.257Z",
+      "first_seen": "2026-05-26T06:05:08.754Z",
+      "last_updated": "2026-05-26T06:05:08.754Z",
+      "status": "active",
+      "score": 8.315934615384615,
+      "score_breakdown": {
+        "price_ratio": 0.7719782051282051,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508754-99",
+      "source": "pap",
+      "title": "Touse in Marseille",
+      "price": 121802,
+      "currency": "EUR",
+      "location": {
+        "address": "177 Rue de Bordeaux",
+        "city": "Bordeaux",
+        "postal_code": "7527",
+        "region": ""
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 3,
+        "bedrooms": 2,
+        "sqm": 168,
+        "parking": false,
+        "outdoor_space": "family-friendly",
+        "condition": "renovated"
+      },
+      "description": "accessible, quiet, near-transport. Good condition",
+      "images": [],
+      "url": "https://example.com/listing-99",
+      "agent": "Agent 89",
+      "phone": "",
+      "posted_at": "2026-05-24T18:34:50.498Z",
+      "first_seen": "2026-05-26T06:05:08.754Z",
+      "last_updated": "2026-05-26T06:05:08.754Z",
+      "status": "active",
+      "score": 8.306241071428571,
+      "score_breakdown": {
+        "price_ratio": 0.8187470238095238,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 0.9,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508754-62",
+      "source": "pap",
+      "title": "Townhouse in Nice",
+      "price": 112356,
+      "currency": "EUR",
+      "location": {
+        "address": "190 Rue de Strasbourg",
+        "city": "Lille",
+        "postal_code": "7528",
+        "region": ""
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 3,
+        "bedrooms": 2,
+        "sqm": 119,
+        "parking": true,
+        "outdoor_space": "near-transport",
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Recently renovated",
+      "images": [],
+      "url": "https://example.com/listing-62",
+      "agent": "Agent 11",
+      "phone": "",
+      "posted_at": "2026-05-19T01:19:24.255Z",
+      "first_seen": "2026-05-26T06:05:08.754Z",
+      "last_updated": "2026-05-26T06:05:08.754Z",
+      "status": "active",
+      "score": 8.29187394957983,
+      "score_breakdown": {
+        "price_ratio": 0.7639579831932772,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508755-141",
+      "source": "pap",
+      "title": "House in Toulouse",
+      "price": 256741,
+      "currency": "EUR",
+      "location": {
+        "address": "167 Rue de Nantes",
+        "city": "Marseille",
+        "postal_code": "7597",
+        "region": ""
+      },
+      "property": {
+        "type": "house",
+        "rooms": 4,
+        "bedrooms": 3,
+        "sqm": 269,
+        "parking": false,
+        "outdoor_space": "low-noise",
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Good condition",
+      "images": [],
+      "url": "https://example.com/listing-141",
+      "agent": "Agent 88",
+      "phone": "",
+      "posted_at": "2026-05-13T11:58:08.283Z",
+      "first_seen": "2026-05-26T06:05:08.755Z",
+      "last_updated": "2026-05-26T06:05:08.755Z",
+      "status": "active",
+      "score": 8.28417936802974,
+      "score_breakdown": {
+        "price_ratio": 0.76139312267658,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508754-68",
+      "source": "immobilier",
+      "title": "Apartment in Paris",
+      "price": 258203,
+      "currency": "EUR",
+      "location": {
+        "address": "99 Rue de Marseille",
+        "city": "Lyon",
+        "postal_code": "75955",
+        "region": ""
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 3,
+        "bedrooms": 2,
+        "sqm": 262,
+        "parking": true,
+        "outdoor_space": null,
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Good condition",
+      "images": [],
+      "url": "https://example.com/listing-68",
+      "agent": "Agent 33",
+      "phone": "",
+      "posted_at": "2026-04-28T12:04:07.493Z",
+      "first_seen": "2026-05-26T06:05:08.754Z",
+      "last_updated": "2026-05-26T06:05:08.754Z",
+      "status": "active",
+      "score": 8.26086927480916,
+      "score_breakdown": {
+        "price_ratio": 0.7536230916030534,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508755-140",
+      "source": "leboncoin",
+      "title": "Hpartment in Lille",
+      "price": 210891,
+      "currency": "EUR",
+      "location": {
+        "address": "160 Rue de Marseille",
+        "city": "Lyon",
+        "postal_code": "75853",
+        "region": ""
+      },
+      "property": {
+        "type": "townhouse",
+        "rooms": 2,
+        "bedrooms": 1,
+        "sqm": 210,
+        "parking": false,
+        "outdoor_space": null,
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Good condition",
+      "images": [],
+      "url": "https://example.com/listing-140",
+      "agent": "Agent 68",
+      "phone": "",
+      "posted_at": "2026-04-30T06:55:53.788Z",
+      "first_seen": "2026-05-26T06:05:08.755Z",
+      "last_updated": "2026-05-26T06:05:08.755Z",
+      "status": "active",
+      "score": 8.246817857142856,
+      "score_breakdown": {
+        "price_ratio": 0.7489392857142857,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508754-93",
+      "source": "bieniici",
+      "title": "House in Paris",
+      "price": 247579,
+      "currency": "EUR",
+      "location": {
+        "address": "69 Rue de Lyon",
+        "city": "Strasbourg",
+        "postal_code": "75877",
+        "region": ""
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 5,
+        "bedrooms": 4,
+        "sqm": 267,
+        "parking": true,
+        "outdoor_space": null,
+        "condition": "renovated"
+      },
+      "description": "accessible, quiet, near-transport. Good condition",
+      "images": [],
+      "url": "https://example.com/listing-93",
+      "agent": "Agent 90",
+      "phone": "",
+      "posted_at": "2026-05-21T22:34:52.388Z",
+      "first_seen": "2026-05-26T06:05:08.754Z",
+      "last_updated": "2026-05-26T06:05:08.754Z",
+      "status": "active",
+      "score": 8.154553370786516,
+      "score_breakdown": {
+        "price_ratio": 0.768184456928839,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 0.9,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508754-86",
+      "source": "pap",
+      "title": "Tpartment in Nantes",
+      "price": 190937,
+      "currency": "EUR",
+      "location": {
+        "address": "69 Rue de Marseille",
+        "city": "Toulouse",
+        "postal_code": "75555",
+        "region": ""
+      },
+      "property": {
+        "type": "house",
+        "rooms": 3,
+        "bedrooms": 2,
+        "sqm": 169,
+        "parking": true,
+        "outdoor_space": null,
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Recently renovated",
+      "images": [],
+      "url": "https://example.com/listing-86",
+      "agent": "Agent 11",
+      "phone": "",
+      "posted_at": "2026-05-16T21:15:53.194Z",
+      "first_seen": "2026-05-26T06:05:08.754Z",
+      "last_updated": "2026-05-26T06:05:08.754Z",
+      "status": "active",
+      "score": 8.152646449704141,
+      "score_breakdown": {
+        "price_ratio": 0.7175488165680474,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    },
+    {
+      "id": "listing-1779775508754-49",
+      "source": "seloger",
+      "title": "Aouse in Lille",
+      "price": 197236,
+      "currency": "EUR",
+      "location": {
+        "address": "185 Rue de Nantes",
+        "city": "Strasbourg",
+        "postal_code": "75809",
+        "region": ""
+      },
+      "property": {
+        "type": "apartment",
+        "rooms": 2,
+        "bedrooms": 1,
+        "sqm": 172,
+        "parking": true,
+        "outdoor_space": null,
+        "condition": "excellent"
+      },
+      "description": "accessible, quiet, near-transport. Good condition",
+      "images": [],
+      "url": "https://example.com/listing-49",
+      "agent": "Agent 67",
+      "phone": "",
+      "posted_at": "2026-05-15T13:47:06.653Z",
+      "first_seen": "2026-05-26T06:05:08.754Z",
+      "last_updated": "2026-05-26T06:05:08.754Z",
+      "status": "active",
+      "score": 8.13995930232558,
+      "score_breakdown": {
+        "price_ratio": 0.7133197674418604,
+        "location_score": 0.6,
+        "space_per_euro": 1,
+        "condition": 1,
+        "isolation_factor": 1
+      }
+    }
+  ],
+  "statistics": {
+    "avg_price": 305255,
+    "avg_score": "7.8",
+    "price_range": {
+      "min": 101167,
+      "max": 607165
+    },
+    "by_city": {
+      "Marseille": 13,
+      "Nantes": 13,
+      "Paris": 6,
+      "Nice": 7,
+      "Bordeaux": 9,
+      "Lille": 9,
+      "Toulouse": 7,
+      "Lyon": 8,
+      "Strasbourg": 7,
+      "Montpellier": 3
+    },
+    "by_type": {
+      "house": 29,
+      "apartment": 31,
+      "townhouse": 22
+    }
+  }
+}

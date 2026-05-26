@@ -1,0 +1,441 @@
+{
+  "content": "══════════════════════════════════════════════════\n🎯 **TOP BUY RECOMMENDATIONS** 🎯\n\n🥇 **Tpartment in Bordeaux**\n   Score: 8.7/10 | €122 614 (€454/m²)\n   270m² | 4 rooms | Toulouse\n   Why: Move-in ready, excellent price-to-space ratio\n   🔗 [View Details](https://example.com/listing-92)\n\n🥈 **Touse in Strasbourg**\n   Score: 8.6/10 | €122 903 (€582/m²)\n   211m² | 4 rooms | Strasbourg\n   Why: Move-in ready, excellent price-to-space ratio\n   🔗 [View Details](https://example.com/listing-129)\n\n🥉 **Touse in Marseille**\n   Score: 8.5/10 | €121 493 (€614/m²)\n   198m² | 4 rooms | Paris\n   Why: Move-in ready, excellent price-to-space ratio\n   🔗 [View Details](https://example.com/listing-130)\n\n══════════════════════════════════════════════════",
+  "embeds": [
+    {
+      "title": "🏘️ Best Real Estate Opportunities - Daily Report",
+      "description": "📊 Market scan for 26/05/2026",
+      "color": 3447003,
+      "fields": [
+        {
+          "name": "⭐ Top Opportunities Found",
+          "value": "94",
+          "inline": true
+        },
+        {
+          "name": "🌟 Excellent (≥9.0)",
+          "value": "0",
+          "inline": true
+        },
+        {
+          "name": "✨ Very Good (8-9)",
+          "value": "30",
+          "inline": true
+        },
+        {
+          "name": "🎯 Good (7-8)",
+          "value": "64",
+          "inline": true
+        },
+        {
+          "name": "💰 Avg Price",
+          "value": "€307 295",
+          "inline": true
+        },
+        {
+          "name": "⚖️ Avg Score",
+          "value": "7.8/10",
+          "inline": true
+        },
+        {
+          "name": "📊 Price Range",
+          "value": "€105 200 - €648 300",
+          "inline": false
+        },
+        {
+          "name": "📍 Top Cities",
+          "value": "• Nantes: 15\n• Marseille: 13\n• Lyon: 11\n• Toulouse: 10\n• Strasbourg: 10",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "Real Estate Best Opportunities Scanner v2.0"
+      },
+      "timestamp": "2026-05-26T06:05:41.020Z"
+    },
+    {
+      "title": "🎯 Tpartment in Bordeaux",
+      "url": "https://example.com/listing-92",
+      "description": "Top opportunity - Score: 8.7/10",
+      "color": 52224,
+      "fields": [
+        {
+          "name": "✨ Opportunity Score",
+          "value": "8.7/10",
+          "inline": true
+        },
+        {
+          "name": "💰 Price",
+          "value": "€122 614",
+          "inline": true
+        },
+        {
+          "name": "€/m²",
+          "value": "€454",
+          "inline": true
+        },
+        {
+          "name": "🏠 Type",
+          "value": "Apartment",
+          "inline": true
+        },
+        {
+          "name": "📏 Area",
+          "value": "270 m²",
+          "inline": true
+        },
+        {
+          "name": "🛏️ Rooms",
+          "value": "4",
+          "inline": true
+        },
+        {
+          "name": "🚗 Parking",
+          "value": "✅ Yes",
+          "inline": true
+        },
+        {
+          "name": "🌳 Outdoor",
+          "value": "low-noise",
+          "inline": true
+        },
+        {
+          "name": "🔧 Condition",
+          "value": "Excellent",
+          "inline": true
+        },
+        {
+          "name": "📍 Location",
+          "value": "Toulouse (75990)",
+          "inline": false
+        },
+        {
+          "name": "📝 Description",
+          "value": "accessible, quiet, near-transport. Good condition",
+          "inline": false
+        },
+        {
+          "name": "📋 Source",
+          "value": "ORPI",
+          "inline": true
+        },
+        {
+          "name": "📅 Posted",
+          "value": "26/04/2026 15:30:19",
+          "inline": true
+        }
+      ],
+      "footer": {
+        "text": "ID: listing-1779775513675-92 | Best Opportunities Scanner"
+      },
+      "timestamp": "2026-05-26T06:05:41.021Z"
+    },
+    {
+      "title": "🎯 Touse in Strasbourg",
+      "url": "https://example.com/listing-129",
+      "description": "Top opportunity - Score: 8.6/10",
+      "color": 52224,
+      "fields": [
+        {
+          "name": "✨ Opportunity Score",
+          "value": "8.6/10",
+          "inline": true
+        },
+        {
+          "name": "💰 Price",
+          "value": "€122 903",
+          "inline": true
+        },
+        {
+          "name": "€/m²",
+          "value": "€582",
+          "inline": true
+        },
+        {
+          "name": "🏠 Type",
+          "value": "Townhouse",
+          "inline": true
+        },
+        {
+          "name": "📏 Area",
+          "value": "211 m²",
+          "inline": true
+        },
+        {
+          "name": "🛏️ Rooms",
+          "value": "4",
+          "inline": true
+        },
+        {
+          "name": "🚗 Parking",
+          "value": "✅ Yes",
+          "inline": true
+        },
+        {
+          "name": "🌳 Outdoor",
+          "value": "None",
+          "inline": true
+        },
+        {
+          "name": "🔧 Condition",
+          "value": "Excellent",
+          "inline": true
+        },
+        {
+          "name": "📍 Location",
+          "value": "Strasbourg (75585)",
+          "inline": false
+        },
+        {
+          "name": "📝 Description",
+          "value": "accessible, quiet, near-transport. Recently renovated",
+          "inline": false
+        },
+        {
+          "name": "📋 Source",
+          "value": "CENTURY21",
+          "inline": true
+        },
+        {
+          "name": "📅 Posted",
+          "value": "02/05/2026 20:35:55",
+          "inline": true
+        }
+      ],
+      "footer": {
+        "text": "ID: listing-1779775513675-129 | Best Opportunities Scanner"
+      },
+      "timestamp": "2026-05-26T06:05:41.021Z"
+    },
+    {
+      "title": "🎯 Touse in Marseille",
+      "url": "https://example.com/listing-130",
+      "description": "Top opportunity - Score: 8.5/10",
+      "color": 52224,
+      "fields": [
+        {
+          "name": "✨ Opportunity Score",
+          "value": "8.5/10",
+          "inline": true
+        },
+        {
+          "name": "💰 Price",
+          "value": "€121 493",
+          "inline": true
+        },
+        {
+          "name": "€/m²",
+          "value": "€614",
+          "inline": true
+        },
+        {
+          "name": "🏠 Type",
+          "value": "Townhouse",
+          "inline": true
+        },
+        {
+          "name": "📏 Area",
+          "value": "198 m²",
+          "inline": true
+        },
+        {
+          "name": "🛏️ Rooms",
+          "value": "4",
+          "inline": true
+        },
+        {
+          "name": "🚗 Parking",
+          "value": "❌ No",
+          "inline": true
+        },
+        {
+          "name": "🌳 Outdoor",
+          "value": "None",
+          "inline": true
+        },
+        {
+          "name": "🔧 Condition",
+          "value": "Excellent",
+          "inline": true
+        },
+        {
+          "name": "📍 Location",
+          "value": "Paris (75258)",
+          "inline": false
+        },
+        {
+          "name": "📝 Description",
+          "value": "accessible, quiet, near-transport. Recently renovated",
+          "inline": false
+        },
+        {
+          "name": "📋 Source",
+          "value": "IMMOBILIER",
+          "inline": true
+        },
+        {
+          "name": "📅 Posted",
+          "value": "01/05/2026 07:09:41",
+          "inline": true
+        }
+      ],
+      "footer": {
+        "text": "ID: listing-1779775513675-130 | Best Opportunities Scanner"
+      },
+      "timestamp": "2026-05-26T06:05:41.021Z"
+    },
+    {
+      "title": "🎯 Aouse in Nantes",
+      "url": "https://example.com/listing-94",
+      "description": "Top opportunity - Score: 8.5/10",
+      "color": 52224,
+      "fields": [
+        {
+          "name": "✨ Opportunity Score",
+          "value": "8.5/10",
+          "inline": true
+        },
+        {
+          "name": "💰 Price",
+          "value": "€105 200",
+          "inline": true
+        },
+        {
+          "name": "€/m²",
+          "value": "€355",
+          "inline": true
+        },
+        {
+          "name": "🏠 Type",
+          "value": "House",
+          "inline": true
+        },
+        {
+          "name": "📏 Area",
+          "value": "296 m²",
+          "inline": true
+        },
+        {
+          "name": "🛏️ Rooms",
+          "value": "3",
+          "inline": true
+        },
+        {
+          "name": "🚗 Parking",
+          "value": "✅ Yes",
+          "inline": true
+        },
+        {
+          "name": "🌳 Outdoor",
+          "value": "low-noise",
+          "inline": true
+        },
+        {
+          "name": "🔧 Condition",
+          "value": "Good",
+          "inline": true
+        },
+        {
+          "name": "📍 Location",
+          "value": "Nantes (75152)",
+          "inline": false
+        },
+        {
+          "name": "📝 Description",
+          "value": "accessible, quiet, near-transport. Good condition",
+          "inline": false
+        },
+        {
+          "name": "📋 Source",
+          "value": "CENTURY21",
+          "inline": true
+        },
+        {
+          "name": "📅 Posted",
+          "value": "11/05/2026 13:08:31",
+          "inline": true
+        }
+      ],
+      "footer": {
+        "text": "ID: listing-1779775513675-94 | Best Opportunities Scanner"
+      },
+      "timestamp": "2026-05-26T06:05:41.021Z"
+    },
+    {
+      "title": "🎯 Hownhouse in Paris",
+      "url": "https://example.com/listing-41",
+      "description": "Top opportunity - Score: 8.5/10",
+      "color": 52224,
+      "fields": [
+        {
+          "name": "✨ Opportunity Score",
+          "value": "8.5/10",
+          "inline": true
+        },
+        {
+          "name": "💰 Price",
+          "value": "€132 452",
+          "inline": true
+        },
+        {
+          "name": "€/m²",
+          "value": "€476",
+          "inline": true
+        },
+        {
+          "name": "🏠 Type",
+          "value": "House",
+          "inline": true
+        },
+        {
+          "name": "📏 Area",
+          "value": "278 m²",
+          "inline": true
+        },
+        {
+          "name": "🛏️ Rooms",
+          "value": "5",
+          "inline": true
+        },
+        {
+          "name": "🚗 Parking",
+          "value": "✅ Yes",
+          "inline": true
+        },
+        {
+          "name": "🌳 Outdoor",
+          "value": "near-transport",
+          "inline": true
+        },
+        {
+          "name": "🔧 Condition",
+          "value": "Renovated",
+          "inline": true
+        },
+        {
+          "name": "📍 Location",
+          "value": "Marseille (75785)",
+          "inline": false
+        },
+        {
+          "name": "📝 Description",
+          "value": "accessible, quiet, near-transport. Good condition",
+          "inline": false
+        },
+        {
+          "name": "📋 Source",
+          "value": "BIENIICI",
+          "inline": true
+        },
+        {
+          "name": "📅 Posted",
+          "value": "07/05/2026 15:12:39",
+          "inline": true
+        }
+      ],
+      "footer": {
+        "text": "ID: listing-1779775513674-41 | Best Opportunities Scanner"
+      },
+      "timestamp": "2026-05-26T06:05:41.021Z"
+    }
+  ]
+}

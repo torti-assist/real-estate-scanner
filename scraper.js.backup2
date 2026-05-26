@@ -1,0 +1,60 @@
+#!/usr/bin/env node
+/**
+ * Real Estate Scanner v2.0 - Enhanced Multi-Source Aggregator
+ * Scans multiple real estate portals for BEST opportunities
+ * Focus: Lower price + Better location + Spacious + Move-in ready
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+// ============================================================================
+// OPPORTUNITY SCORER - Rate listings by value
+// ============================================================================
+
+  constructor(config) {
+    this.config = config;
+    this.weights = config.opportunity_scoring?.weights || {};
+    this.target_price_per_sqm = config.opportunity_scoring?.target_price_per_sqm || 5000;
+  }
+  scoreIsolation(listing) {
+    // Avoid listings that need major work
+    const desc = (listing.description + ' ' + listing.title).toLowerCase();
+    const red_flags = [
+      'needs-major-work',
+      'renovation-needed',
+      'structural',
+      'foundation',
+      'roof',
+      'asbestos',
+      'mold',
+    ];
+    for (const flag of red_flags) {
+      if (desc.includes(flag)) return 0;
+    }
+    return 1.0;
+  }
+}
+  scoreRework(listing) {
+    // Score based on price per m2 and potential rework costs
+    if (!listing.property.sqm || !listing.price) return 0.5;
+
+    const pricePerSqm = listing.price / listing.property.sqm;
+    const thresholds = this.config.opportunity_scoring?.price_per_sqm_thresholds || {};
+
+    // Excellent: < 800€/m2 (can afford >50k reworks)
+    // Good: < 1200€/m2 (can afford <10k repairs)
+    // Acceptable: < 1500€/m2 (no major reworks needed)
+    // Poor: >= 1500€/m2 (too expensive for given condition)
+
+    if (pricePerSqm < thresholds.excellent || pricePerSqm === 0) {
+      return 1.0; // Excellent price, can handle heavy reworks
+    } else if (pricePerSqm < thresholds.good) {
+      return 0.8; // Good price, can handle small repairs
+    } else if (pricePerSqm < thresholds.acceptable) {
+      return 0.6; // Acceptable, minimal reworks
+    } else {
+      return 0.3; // Poor value for money
+    }
+  }
+

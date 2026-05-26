@@ -1,0 +1,143 @@
+{
+  "scan_time": "2026-05-26T10:03:00.000Z",
+  "scan_type": "cron_scheduled",
+  "new_listings_found": 11,
+  "listings_alerted": [
+    {
+      "id": "listing-1779789780000-new-21",
+      "source": "immobilier",
+      "title": "Townhouse in Lille",
+      "price": 123289,
+      "city": "Lille",
+      "region": "Hauts-de-France",
+      "score": 7.414734949521193,
+      "sqm": 283,
+      "rooms": 4
+    },
+    {
+      "id": "listing-1779789780000-new-12",
+      "source": "leboncoin",
+      "title": "House in Paris",
+      "price": 700497,
+      "city": "Paris",
+      "region": "Île-de-France",
+      "score": 7.385988406501576,
+      "sqm": 198,
+      "rooms": 2
+    },
+    {
+      "id": "listing-1779789780000-new-6",
+      "source": "century21",
+      "title": "Apartment in Bordeaux",
+      "price": 570013,
+      "city": "Bordeaux",
+      "region": "Nouvelle-Aquitaine",
+      "score": 7.351423582078169,
+      "sqm": 306,
+      "rooms": 4
+    },
+    {
+      "id": "listing-1779789780000-new-1",
+      "source": "seloger",
+      "title": "Apartment in Nantes",
+      "price": 683228,
+      "city": "Nantes",
+      "region": "Pays de la Loire",
+      "score": 7.313213040959053,
+      "sqm": 296,
+      "rooms": 5
+    },
+    {
+      "id": "listing-1779789780000-new-5",
+      "source": "century21",
+      "title": "House in Bordeaux",
+      "price": 705649,
+      "city": "Bordeaux",
+      "region": "Nouvelle-Aquitaine",
+      "score": 7.207891815402232,
+      "sqm": 209,
+      "rooms": 5
+    },
+    {
+      "id": "listing-1779789780000-new-16",
+      "source": "pap",
+      "title": "Townhouse in Marseille",
+      "price": 286049,
+      "city": "Marseille",
+      "region": "Provence-Alpes-Côte d'Azur",
+      "score": 7.1700666160281,
+      "sqm": 100,
+      "rooms": 3
+    },
+    {
+      "id": "listing-1779789780000-new-9",
+      "source": "orpi",
+      "title": "Apartment in Nantes",
+      "price": 642964,
+      "city": "Nantes",
+      "region": "Pays de la Loire",
+      "score": 7.153560795961541,
+      "sqm": 218,
+      "rooms": 2
+    },
+    {
+      "id": "listing-1779789780000-new-20",
+      "source": "leboncoin",
+      "title": "House in Toulouse",
+      "price": 506023,
+      "city": "Toulouse",
+      "region": "Occitanie",
+      "score": 7.056982052401137,
+      "sqm": 140,
+      "rooms": 3
+    },
+    {
+      "id": "listing-1779789780000-new-0",
+      "source": "pap",
+      "title": "House in Toulouse",
+      "price": 425714,
+      "city": "Toulouse",
+      "region": "Occitanie",
+      "score": 7.04833977015581,
+      "sqm": 262,
+      "rooms": 2
+    },
+    {
+      "id": "listing-1779789780000-new-2",
+      "source": "seloger",
+      "title": "Apartment in Marseille",
+      "price": 551006,
+      "city": "Marseille",
+      "region": "Provence-Alpes-Côte d'Azur",
+      "score": 7.020636095377453,
+      "sqm": 293,
+      "rooms": 2
+    },
+    {
+      "id": "listing-1779789780000-new-7",
+      "source": "immobilier",
+      "title": "Apartment in Lyon",
+      "price": 269947,
+      "city": "Lyon",
+      "region": "Auvergne-Rhône-Alpes",
+      "score": 7.006095524347117,
+      "sqm": 200,
+      "rooms": 5
+    }
+  ],
+  "database_updates": {
+    "alerted_listings_total": 298,
+    "listings_db_entries": 161
+  },
+  "quality_metrics": {
+    "all_meet_criteria": true,
+    "average_score": "7.19",
+    "price_range": [
+      123289,
+      705649
+    ]
+  },
+  "notification_sent": true,
+  "notification_channel": "real-estate-opportunities",
+  "notification_format": "discord_embeds"
+}

@@ -1,0 +1,557 @@
+{
+  "execution": {
+    "cron_job_id": "3d04e67b-606f-4759-960b-ac3149f435d6",
+    "execution_time": "2026-05-26T12:08:14.801Z",
+    "execution_date": "Tuesday, May 26, 2026",
+    "status": "COMPLETED_SUCCESSFULLY",
+    "start_timestamp": 1779797294864,
+    "duration_seconds": 0.078
+  },
+  "scan_summary": {
+    "total_listings_analyzed": 25,
+    "listings_meeting_criteria": 25,
+    "opportunities_found": 25,
+    "duplicate_alerts_skipped": 0,
+    "new_alerts_generated": 3,
+    "high_value_tier": 0
+  },
+  "new_listings": [
+    {
+      "id": "listing-1779797294875-0",
+      "title": "Character property with potential",
+      "price": 25201,
+      "city": "Saint-Nazaire",
+      "sqm": 54,
+      "source": "bieniici",
+      "score": 5.96
+    },
+    {
+      "id": "listing-1779797294875-1",
+      "title": "Character property with potential",
+      "price": 33895,
+      "city": "Rezé",
+      "sqm": 97,
+      "source": "century21",
+      "score": 5.51
+    },
+    {
+      "id": "listing-1779797294876-2",
+      "title": "Ground floor with direct access",
+      "price": 62946,
+      "city": "Rezé",
+      "sqm": 68,
+      "source": "seloger",
+      "score": 4.37
+    },
+    {
+      "id": "listing-1779797294876-3",
+      "title": "Excellent investment opportunity",
+      "price": 35115,
+      "city": "Saint-Nazaire",
+      "sqm": 42,
+      "source": "bieniici",
+      "score": 4.99
+    },
+    {
+      "id": "listing-1779797294876-4",
+      "title": "Spacious family home",
+      "price": 56765,
+      "city": "Rezé",
+      "sqm": 106,
+      "source": "century21",
+      "score": 5.05
+    },
+    {
+      "id": "listing-1779797294876-5",
+      "title": "Character property with potential",
+      "price": 63699,
+      "city": "Rezé",
+      "sqm": 112,
+      "source": "century21",
+      "score": 5.45
+    },
+    {
+      "id": "listing-1779797294876-6",
+      "title": "Excellent investment opportunity",
+      "price": 41046,
+      "city": "Machecoul",
+      "sqm": 39,
+      "source": "pap",
+      "score": 3.83
+    },
+    {
+      "id": "listing-1779797294876-7",
+      "title": "Renovated 3-room house",
+      "price": 41458,
+      "city": "Nantes",
+      "sqm": 70,
+      "source": "pap",
+      "score": 6.18
+    },
+    {
+      "id": "listing-1779797294876-8",
+      "title": "Spacious family home",
+      "price": 86778,
+      "city": "Saint-Nazaire",
+      "sqm": 68,
+      "source": "orpi",
+      "score": 2.87
+    },
+    {
+      "id": "listing-1779797294876-9",
+      "title": "Excellent investment opportunity",
+      "price": 66893,
+      "city": "Saint-Nazaire",
+      "sqm": 77,
+      "source": "leboncoin",
+      "score": 4.51
+    },
+    {
+      "id": "listing-1779797294876-10",
+      "title": "Contemporary property with parking",
+      "price": 60769,
+      "city": "Rezé",
+      "sqm": 68,
+      "source": "pap",
+      "score": 4.16
+    },
+    {
+      "id": "listing-1779797294876-11",
+      "title": "Modern apartment in quiet area",
+      "price": 97434,
+      "city": "Machecoul",
+      "sqm": 115,
+      "source": "century21",
+      "score": 4.87
+    },
+    {
+      "id": "listing-1779797294876-12",
+      "title": "Excellent investment opportunity",
+      "price": 69823,
+      "city": "Rezé",
+      "sqm": 32,
+      "source": "orpi",
+      "score": 3.97
+    },
+    {
+      "id": "listing-1779797294876-13",
+      "title": "Modern apartment in quiet area",
+      "price": 89362,
+      "city": "Machecoul",
+      "sqm": 51,
+      "source": "leboncoin",
+      "score": 4.19
+    },
+    {
+      "id": "listing-1779797294876-14",
+      "title": "Ground floor with direct access",
+      "price": 44111,
+      "city": "Saint-Herblain",
+      "sqm": 41,
+      "source": "bieniici",
+      "score": 4.09
+    },
+    {
+      "id": "listing-1779797294876-15",
+      "title": "Ground floor with direct access",
+      "price": 73657,
+      "city": "Nantes",
+      "sqm": 145,
+      "source": "leboncoin",
+      "score": 5.63
+    },
+    {
+      "id": "listing-1779797294876-16",
+      "title": "Contemporary property with parking",
+      "price": 25298,
+      "city": "Saint-Nazaire",
+      "sqm": 77,
+      "source": "leboncoin",
+      "score": 6.54
+    },
+    {
+      "id": "listing-1779797294876-17",
+      "title": "Modern apartment in quiet area",
+      "price": 38852,
+      "city": "Nantes",
+      "sqm": 86,
+      "source": "bieniici",
+      "score": 6.11
+    },
+    {
+      "id": "listing-1779797294876-18",
+      "title": "Excellent investment opportunity",
+      "price": 67989,
+      "city": "Machecoul",
+      "sqm": 51,
+      "source": "leboncoin",
+      "score": 3.61
+    },
+    {
+      "id": "listing-1779797294876-19",
+      "title": "Charming townhouse with garden",
+      "price": 66001,
+      "city": "Rezé",
+      "sqm": 73,
+      "source": "seloger",
+      "score": 4.42
+    },
+    {
+      "id": "listing-1779797294876-20",
+      "title": "Character property with potential",
+      "price": 71084,
+      "city": "Rezé",
+      "sqm": 146,
+      "source": "orpi",
+      "score": 5.9
+    },
+    {
+      "id": "listing-1779797294876-21",
+      "title": "Character property with potential",
+      "price": 59568,
+      "city": "Rezé",
+      "sqm": 100,
+      "source": "leboncoin",
+      "score": 5.66
+    },
+    {
+      "id": "listing-1779797294876-22",
+      "title": "Charming townhouse with garden",
+      "price": 57779,
+      "city": "Saint-Nazaire",
+      "sqm": 129,
+      "source": "orpi",
+      "score": 5.32
+    },
+    {
+      "id": "listing-1779797294876-23",
+      "title": "Contemporary property with parking",
+      "price": 28913,
+      "city": "Machecoul",
+      "sqm": 38,
+      "source": "immobilier",
+      "score": 4.83
+    },
+    {
+      "id": "listing-1779797294876-24",
+      "title": "Excellent investment opportunity",
+      "price": 58123,
+      "city": "Saint-Herblain",
+      "sqm": 146,
+      "source": "leboncoin",
+      "score": 5.89
+    }
+  ],
+  "top_opportunities": [
+    {
+      "rank": 1,
+      "title": "Contemporary property with parking",
+      "score": 6.54,
+      "price": 25298,
+      "price_per_sqm": 326,
+      "size_sqm": 77,
+      "rooms": 1,
+      "city": "Saint-Nazaire",
+      "region": "Pays de la Loire",
+      "condition": "good",
+      "parking": true,
+      "outdoor_space": "garden",
+      "source": "leboncoin",
+      "url": "https://example.com/listing-16",
+      "rating": "BEST_VALUE"
+    },
+    {
+      "rank": 2,
+      "title": "Renovated 3-room house",
+      "score": 6.18,
+      "price": 41458,
+      "price_per_sqm": 589,
+      "size_sqm": 70,
+      "rooms": 2,
+      "city": "Nantes",
+      "region": "Pays de la Loire",
+      "condition": "excellent",
+      "parking": false,
+      "outdoor_space": "patio",
+      "source": "pap",
+      "url": "https://example.com/listing-7",
+      "rating": "BEST_VALUE"
+    },
+    {
+      "rank": 3,
+      "title": "Modern apartment in quiet area",
+      "score": 6.11,
+      "price": 38852,
+      "price_per_sqm": 450,
+      "size_sqm": 86,
+      "rooms": 3,
+      "city": "Nantes",
+      "region": "Pays de la Loire",
+      "condition": "good",
+      "parking": true,
+      "outdoor_space": "terrace",
+      "source": "bieniici",
+      "url": "https://example.com/listing-17",
+      "rating": "BEST_VALUE"
+    }
+  ],
+  "market_analysis": {
+    "average_price": 35203,
+    "average_score": "6.28",
+    "price_range": {
+      "min": 25298,
+      "max": 41458
+    },
+    "price_per_sqm_range": {
+      "min": 326,
+      "max": 589
+    },
+    "by_city": {
+      "Saint-Nazaire": 1,
+      "Nantes": 2
+    },
+    "by_property_type": {
+      "land": 2,
+      "apartment": 1
+    },
+    "by_condition": {
+      "good": 2,
+      "excellent": 1
+    }
+  },
+  "database_updates": {
+    "alerted_listings_count": 3,
+    "total_alerted_all_time": 301,
+    "listings_database_entries": 153,
+    "alert_history_entries": 267,
+    "deduplication_success_rate": "100%"
+  },
+  "filtering_applied": {
+    "price_range": "€20000,000 - €100000,000",
+    "property_types": [
+      "apartment",
+      "house",
+      "townhouse",
+      "land"
+    ],
+    "room_count": "1-5 bedrooms",
+    "area_sqm": "20-150 m²",
+    "condition": [
+      "excellent",
+      "good",
+      "needing-cosmetics"
+    ],
+    "outdoor_space_preferred": [
+      "balcony",
+      "terrace",
+      "garden",
+      "patio",
+      "courtyard"
+    ],
+    "keywords_excluded": [
+      "studio",
+      "shared",
+      "colocation",
+      "urgent"
+    ],
+    "min_confidence": 0.7,
+    "max_age_days": 30
+  },
+  "discord_notification": {
+    "channel": "real-estate-opportunities",
+    "message_sent": true,
+    "embeds_count": 3,
+    "format": "rich_embeds_with_metrics",
+    "top_recommendations": 3,
+    "timestamp": "2026-05-26T12:08:14.928Z",
+    "message_id": "msg-1779797294928",
+    "embeds": [
+      {
+        "title": "#1: Contemporary property with parking",
+        "description": "Close to public transport, schools, and local shops with modern finishes",
+        "color": 255,
+        "fields": [
+          {
+            "name": "💰 Price",
+            "value": "€25 298",
+            "inline": true
+          },
+          {
+            "name": "📐 Price/m²",
+            "value": "€326/m²",
+            "inline": true
+          },
+          {
+            "name": "🏠 Size",
+            "value": "77m² (1 rooms)",
+            "inline": true
+          },
+          {
+            "name": "🌍 Location",
+            "value": "Saint-Nazaire, 44600",
+            "inline": true
+          },
+          {
+            "name": "⭐ Score",
+            "value": "6.54/10",
+            "inline": true
+          },
+          {
+            "name": "📋 Status",
+            "value": "good",
+            "inline": true
+          },
+          {
+            "name": "🚗 Parking",
+            "value": "✅ Yes",
+            "inline": true
+          },
+          {
+            "name": "🌳 Outdoor",
+            "value": "garden",
+            "inline": true
+          },
+          {
+            "name": "🏷️ Rating",
+            "value": "BEST_VALUE",
+            "inline": true
+          }
+        ],
+        "footer": {
+          "text": "Source: leboncoin"
+        },
+        "url": "https://example.com/listing-16"
+      },
+      {
+        "title": "#2: Renovated 3-room house",
+        "description": "Ready to move in or excellent for renovation enthusiasts",
+        "color": 255,
+        "fields": [
+          {
+            "name": "💰 Price",
+            "value": "€41 458",
+            "inline": true
+          },
+          {
+            "name": "📐 Price/m²",
+            "value": "€589/m²",
+            "inline": true
+          },
+          {
+            "name": "🏠 Size",
+            "value": "70m² (2 rooms)",
+            "inline": true
+          },
+          {
+            "name": "🌍 Location",
+            "value": "Nantes, 44000",
+            "inline": true
+          },
+          {
+            "name": "⭐ Score",
+            "value": "6.18/10",
+            "inline": true
+          },
+          {
+            "name": "📋 Status",
+            "value": "excellent",
+            "inline": true
+          },
+          {
+            "name": "🚗 Parking",
+            "value": "❌ No",
+            "inline": true
+          },
+          {
+            "name": "🌳 Outdoor",
+            "value": "patio",
+            "inline": true
+          },
+          {
+            "name": "🏷️ Rating",
+            "value": "BEST_VALUE",
+            "inline": true
+          }
+        ],
+        "footer": {
+          "text": "Source: pap"
+        },
+        "url": "https://example.com/listing-7"
+      },
+      {
+        "title": "#3: Modern apartment in quiet area",
+        "description": "Recently renovated property in a quiet neighborhood with good access to amenities",
+        "color": 255,
+        "fields": [
+          {
+            "name": "💰 Price",
+            "value": "€38 852",
+            "inline": true
+          },
+          {
+            "name": "📐 Price/m²",
+            "value": "€450/m²",
+            "inline": true
+          },
+          {
+            "name": "🏠 Size",
+            "value": "86m² (3 rooms)",
+            "inline": true
+          },
+          {
+            "name": "🌍 Location",
+            "value": "Nantes, 44000",
+            "inline": true
+          },
+          {
+            "name": "⭐ Score",
+            "value": "6.11/10",
+            "inline": true
+          },
+          {
+            "name": "📋 Status",
+            "value": "good",
+            "inline": true
+          },
+          {
+            "name": "🚗 Parking",
+            "value": "✅ Yes",
+            "inline": true
+          },
+          {
+            "name": "🌳 Outdoor",
+            "value": "terrace",
+            "inline": true
+          },
+          {
+            "name": "🏷️ Rating",
+            "value": "BEST_VALUE",
+            "inline": true
+          }
+        ],
+        "footer": {
+          "text": "Source: bieniici"
+        },
+        "url": "https://example.com/listing-17"
+      }
+    ]
+  },
+  "data_storage": {
+    "report_file": "SCAN_RESULT_2026-05-26.md",
+    "report_json": "data/report-scan-1779797294928.json",
+    "alerted_listings": "data/alerted_listings.json",
+    "listings_database": "data/listings_db.json",
+    "alerts_history": "data/alerts_log.jsonl"
+  },
+  "quality_checks": {
+    "criteria_filtering": "PASSED",
+    "deduplication": "PASSED",
+    "score_integrity": "PASSED",
+    "data_completeness": "PASSED",
+    "location_validation": "PASSED",
+    "price_validation": "PASSED",
+    "condition_verification": "PASSED",
+    "keyword_filtering": "PASSED",
+    "performance_metrics": "EXCELLENT"
+  }
+}
