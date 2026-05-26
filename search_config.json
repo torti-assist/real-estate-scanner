@@ -1,87 +1,106 @@
 {
   "locations": [
     {
-      "city": "Paris",
-      "postal_code": "75001-75020",
-      "region": "Île-de-France"
-    },
-    {
-      "city": "Lyon",
-      "postal_code": "69001-69009",
-      "region": "Auvergne-Rhône-Alpes"
-    },
-    {
-      "city": "Marseille",
-      "postal_code": "13001-13016",
-      "region": "Provence-Alpes-Côte d'Azur"
-    },
-    {
-      "city": "Toulouse",
-      "postal_code": "31000-31100",
-      "region": "Occitanie"
-    },
-    {
-      "city": "Nice",
-      "postal_code": "06000-06300",
-      "region": "Provence-Alpes-Côte d'Azur"
-    },
-    {
-      "city": "Nantes",
-      "postal_code": "44000-44300",
-      "region": "Pays de la Loire"
-    },
-    {
-      "city": "Strasbourg",
-      "postal_code": "67000-67200",
-      "region": "Grand Est"
-    },
-    {
-      "city": "Montpellier",
-      "postal_code": "34000-34090",
-      "region": "Occitanie"
-    },
-    {
-      "city": "Bordeaux",
-      "postal_code": "33000-33300",
-      "region": "Nouvelle-Aquitaine"
-    },
-    {
-      "city": "Lille",
-      "postal_code": "59000-59800",
-      "region": "Hauts-de-France"
+      "city": "Machecoul",
+      "postal_code": "44270",
+      "region": "Pays de la Loire",
+      "radius_km": 10
     }
   ],
   "opportunity_scoring": {
     "enabled": true,
-    "min_score": 7.0,
+    "min_score": 6.0,
     "weights": {
-      "price_ratio": 0.3,
-      "location_score": 0.25,
-      "space_per_euro": 0.2,
+      "price_ratio": 0.30,
+      "location_score": 0.20,
+      "space_per_euro": 0.15,
       "condition": 0.15,
-      "isolation_factor": 0.1
+      "isolation_factor": 0.10,
+      "rework_factor": 0.10
     },
-    "target_price_per_sqm": 4000,
-    "preferred_neighborhoods": ["accessible", "quiet", "near-transport", "near-shops", "low-noise"]
+    "target_price_per_sqm": 1200,
+    "price_per_sqm_thresholds": {
+      "excellent": 800,
+      "good": 1200,
+      "acceptable": 1500
+    },
+    "preferred_neighborhoods": [
+      "accessible",
+      "quiet",
+      "near-transport",
+      "near-shops",
+      "family-friendly"
+    ]
   },
-  "property_type": ["apartment", "house", "townhouse"],
+  "property_type": [
+    "apartment",
+    "house",
+    "townhouse",
+    "land"
+  ],
   "price_range": {
-    "min": 80000,
-    "max": 750000
+    "min": 20000,
+    "max": 100000
   },
   "rooms": {
-    "min": 2,
-    "max": 6
+    "min": 1,
+    "max": 5
   },
   "area_sqm": {
-    "min": 45,
-    "max": 350
+    "min": 20,
+    "max": 150
   },
-  "outdoor_space": ["balcony", "terrace", "garden", "patio", "courtyard"],
-  "condition": ["good", "excellent", "renovated", "needing-cosmetics"],
-  "keywords_include": ["bright", "modern", "renovated", "spacious", "lumineux", "calme", "accessible", "quiet", "character", "potential"],
-  "keywords_exclude": ["studio", "shared", "colocation", "urgent", "vente-rapide", "needs-major-work", "renovation-needed", "building-issues"],
-  "sources": ["seloger", "leboncoin", "pap", "bieniici", "orpi", "immobilier", "proprietes", "century21", "agence-directe"],
+  "outdoor_space": [
+    "balcony",
+    "terrace",
+    "garden",
+    "patio",
+    "courtyard"
+  ],
+  "condition": [
+    "excellent",
+    "good",
+    "needing-cosmetics",
+    "needing-repairs",
+    "to-renovate",
+    "to-rebuild"
+  ],
+  "keywords_include": [
+    "bright",
+    "modern",
+    "renovated",
+    "spacious",
+    "lumineux",
+    "calme",
+    "accessible",
+    "quiet",
+    "character",
+    "potential",
+    "habitable"
+  ],
+  "keywords_exclude": [
+    "studio",
+    "shared",
+    "colocation",
+    "urgent",
+    "vente-rapide",
+    "needs-major-work",
+    "renovation-needed",
+    "building-issues",
+    "ruine",
+    "effondrement"
+  ],
+  "sources": [
+    "seloger",
+    "leboncoin",
+    "pap",
+    "bieniici",
+    "orpi",
+    "immobilier",
+    "proprietes",
+    "century21",
+    "agence-directe"
+  ],
   "max_days_old": 30,
   "min_confidence": 0.7,
   "discord": {
