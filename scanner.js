@@ -555,6 +555,11 @@ class RealEstateScanner {
     const mainPath = path.join(path.dirname(this.configPath), 'CRON_EXECUTION_RESULT_2026-05-26.json');
     fs.writeFileSync(mainPath, JSON.stringify(this.scanResults, null, 2));
 
+    // Generate and save markdown report
+    const markdownReport = this.generateMarkdownReport();
+    const reportPath = path.join(path.dirname(this.configPath), this.scanResults.data_storage.report_file);
+    fs.writeFileSync(reportPath, markdownReport);
+
     return jsonPath;
   }
 
