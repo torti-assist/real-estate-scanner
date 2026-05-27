@@ -64,6 +64,7 @@ TOP 3 OPPORTUNITIES
    Score:              ${scanResults.top_opportunities[0].score}/10 🎯
    Rating:             ${scanResults.top_opportunities[0].rating}
    Source:             ${scanResults.top_opportunities[0].source}
+   Link:               ${scanResults.top_opportunities[0].url}
 
 #2 ⭐ ${scanResults.top_opportunities[1].title}
    Price:              €${scanResults.top_opportunities[1].price.toLocaleString('fr-FR')} (€${scanResults.top_opportunities[1].price_per_sqm}/m²)
@@ -75,6 +76,7 @@ TOP 3 OPPORTUNITIES
    Score:              ${scanResults.top_opportunities[1].score}/10 🎯
    Rating:             ${scanResults.top_opportunities[1].rating}
    Source:             ${scanResults.top_opportunities[1].source}
+   Link:               ${scanResults.top_opportunities[1].url}
 
 #3 ⭐ ${scanResults.top_opportunities[2].title}
    Price:              €${scanResults.top_opportunities[2].price.toLocaleString('fr-FR')} (€${scanResults.top_opportunities[2].price_per_sqm}/m²)
@@ -86,6 +88,7 @@ TOP 3 OPPORTUNITIES
    Score:              ${scanResults.top_opportunities[2].score}/10 🎯
    Rating:             ${scanResults.top_opportunities[2].rating}
    Source:             ${scanResults.top_opportunities[2].source}
+   Link:               ${scanResults.top_opportunities[2].url}
 
 MARKET ANALYSIS
 ─────────────────────────────────────────────────────────────────────

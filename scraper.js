@@ -287,7 +287,7 @@ class MockDataGenerator {
 
     for (let i = 0; i < count; i++) {
       const sqm = 50 + Math.random() * 250;
-      const price = 100000 + Math.random() * 600000;
+      const price = 20000 + Math.random() * 80000;
       const rooms = 2 + Math.floor(Math.random() * 4);
       const isExcellent = Math.random() < 0.2;
       const hasOutdoor = Math.random() < 0.6;
